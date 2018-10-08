@@ -47,7 +47,7 @@ class BarraNav1 extends Component {
                   <NavLink to="#">Sobre</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="#">Home</NavLink>
+                  <NavLink to="#">Contato</NavLink>
                 </NavItem>
               </NavbarNav>
             </Collapse>

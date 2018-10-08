@@ -10,7 +10,7 @@ import {
 
 const Carrosel = () => {
   return (
-    <Container className="mt-5 p-5">
+    <React.Fragment>
       <Carousel
         activeItem={1}
         length={4}
@@ -73,11 +73,7 @@ const Carrosel = () => {
           </CarouselItem>
         </CarouselInner>
       </Carousel>
-      <h3 className="display-1 text-white mt-5">
-        Pereira
-        <span className="text-danger">SC</span>
-      </h3>
-    </Container>
+    </React.Fragment>
   );
 };
 

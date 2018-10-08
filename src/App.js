@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App bg-dark">
-        <div style={{ height: '100vh' }}>
+        <div style={{ height: '100vh' }} className="mb-5">
           <BarraTopInfo />
           <BarraNav />
           <Carrosel />
