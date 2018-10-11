@@ -1,32 +1,102 @@
-.App {
+#main-area {
+  height: 100vh;
+  background: #b3060e;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
   text-align: center;
+  color: #fff;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.sobre-header {
+  height: 200px;
+  background: url("/img/media.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link:hover {
+  text-shadow: 1px 0px 20px #b3060e;
+  transition: 1s linear 0s;
+  outline: 0 none;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: #272f38;
+  text-align: center;
+  height: 1.5em;
+  /* opacity: 0.5; */
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #272f38, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: #272f38;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  background-color: #fcfcfa;
+}
+
+.hr-text-sobre {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
   color: white;
+  text-align: center;
+  height: 1.5em;
+  /* opacity: 0.5; */
+}
+.hr-text-sobre:before {
+  content: "";
+  background: linear-gradient(to right, transparent, white, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text-sobre:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  background-color: #b3060e;
 }
 
-.App-link {
-  color: #61dafb;
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zoom:hover {
+  transform: scale(
+    1.5
+  );
+}
+
+.color-red {
+  background: #b3060e;
+}
+
+.color-black {
+  background: #272f38;
 }

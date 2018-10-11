@@ -5,7 +5,6 @@ import {
   CarouselItem,
   CarouselCaption,
   View,
-  Container
 } from 'mdbreact';
 
 const Carrosel = () => {
@@ -22,7 +21,7 @@ const Carrosel = () => {
           <CarouselItem itemId="1">
             <View>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-fluid"
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
                 alt="First slide"
               />
@@ -35,7 +34,7 @@ const Carrosel = () => {
           <CarouselItem itemId="2">
             <View>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-fluid"
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg"
                 alt="Second slide"
               />
@@ -48,7 +47,7 @@ const Carrosel = () => {
           <CarouselItem itemId="3">
             <View>
               <img
-                className="d-block w-100"
+                className="d-block w-100 img-fluid"
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
                 alt="Third slide"
               />

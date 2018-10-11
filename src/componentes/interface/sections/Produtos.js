@@ -1,109 +1,203 @@
-import React from 'react';
+import React from "react";
 import {
   Container,
   Card,
   CardBody,
+  CardImage,
   CardTitle,
-  CardText,
-  Button
-} from 'mdbreact';
+  CardText
+} from "mdbreact";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Fade from "react-reveal/Fade";
 
 const Produtos = () => {
   return (
-    <Container className="text-white p-5 mb-5">
-      <h3 className="font-weight-bold display-4">Nossos Produtos</h3>
-      <p className="lead">
-        dsad asdsa dsa asddasd adasd sadsadsa dd adsa dasd asdas
-      </p>
-      <div className="d-flex justify-content-around align-items-center my-5">
-        <Card color="black" className="py-5">
-          <FontAwesomeIcon
-            icon={['fab', 'facebook']}
-            size="4x"
-            className="mx-auto"
-          />
-          <CardBody>
-            <CardTitle>Item 1</CardTitle>
-            <CardText style={{ fontSize: '20px', color: 'white' }}>
-              asd adsad adsad sa dasdsa das
-            </CardText>
-            <a
-              href="/"
-              className="d-flex justify-content-end"
-              style={{ fontSize: '20px', color: 'white' }}
+    <Container className="text-center p-5">
+      <Fade buttom>
+        <h3
+          className="font-weight-bold display-4 hr-text"
+          data-content="Nossos Produtos"
+        />
+        <p className="lead">Breve resumo sobre os produtos</p>
+      </Fade>
+      <Fade buttom>
+        <div className="row my-5">
+          <div className="col-md-4 zoom">
+            <div className="d-flex justify-content-center">
+              <div className="p-2">
+                <FontAwesomeIcon icon="car" color="red" size="4x" />
+              </div>
+              <div className="p-2 align-self-center">
+                <h3>Nome Produto</h3>
+              </div>
+            </div>
+            <p>Descrição do Produto</p>
+          </div>
+          <div className="col-md-4 zoom">
+            <div className="d-flex justify-content-center">
+              <div className="p-2">
+                <FontAwesomeIcon icon="car" color="red" size="4x" />
+              </div>
+              <div className="p-2 align-self-center">
+                <h3>Nome Produto</h3>
+              </div>
+            </div>
+            <p>Descrição do Produto</p>
+          </div>
+          <div className="col-md-4 zoom">
+            <div className="d-flex justify-content-center">
+              <div className="p-2">
+                <FontAwesomeIcon icon="car" color="red" size="4x" />
+              </div>
+              <div className="p-2 align-self-center">
+                <h3>Nome Produto</h3>
+              </div>
+            </div>
+            <p>Descrição do Produto</p>
+          </div>
+        </div>
+      </Fade>
+      <Fade buttom>
+        <div className="row mb-5">
+          <div className="col-md-4 zoom">
+            <div className="d-flex justify-content-center">
+              <div className="p-2">
+                <FontAwesomeIcon icon="car" color="red" size="4x" />
+              </div>
+              <div className="p-2 align-self-center">
+                <h3>Nome Produto</h3>
+              </div>
+            </div>
+            <p>Descrição do Produto</p>
+          </div>
+          <div className="col-md-4 zoom">
+            <div className="d-flex justify-content-center">
+              <div className="p-2">
+                <FontAwesomeIcon icon="car" color="red" size="4x" />
+              </div>
+              <div className="p-2 align-self-center">
+                <h3>Nome Produto</h3>
+              </div>
+            </div>
+            <p>Descrição do Produto</p>
+          </div>
+          <div className="col-md-4 zoom">
+            <div className="d-flex justify-content-center">
+              <div className="p-2">
+                <FontAwesomeIcon icon="car" color="red" size="4x" />
+              </div>
+              <div className="p-2 align-self-center">
+                <h3>Nome Produto</h3>
+              </div>
+            </div>
+            <p>Descrição do Produto</p>
+          </div>
+        </div>
+      </Fade>
+      <Fade butoom>
+        <div className="row">
+          <div className="col-md-10 mx-auto">
+            <Card
+              className="card-image"
+              style={{
+                backgroundImage:
+                  "url('https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg')"
+              }}
             >
-              Saiba Mais
-            </a>
-          </CardBody>
-        </Card>
-        <Card color="red" className="py-5">
-          <FontAwesomeIcon
-            icon={['fab', 'facebook']}
-            size="4x"
-            className="mx-auto"
-          />
-          <CardBody>
-            <CardTitle>Item 2</CardTitle>
-            <CardText style={{ fontSize: '20px', color: 'white' }}>
-              asd adsad adsad sa dasdsa das
-            </CardText>
-            <a
-              href="/"
-              className="d-flex justify-content-end"
-              style={{ fontSize: '20px', color: 'white' }}
-            >
-              Saiba Mais
-            </a>
-          </CardBody>
-        </Card>
-        <Card color="black" className="py-5">
-          <FontAwesomeIcon
-            icon={['fab', 'facebook']}
-            size="4x"
-            className="mx-auto"
-          />
-          <CardBody>
-            <CardTitle>Item 3</CardTitle>
-            <CardText style={{ fontSize: '20px', color: 'white' }}>
-              asd adsad adsad sa dasdsa das
-            </CardText>
-            <a
-              href="/"
-              className="d-flex justify-content-end"
-              style={{ fontSize: '20px', color: 'white' }}
-            >
-              Saiba Mais
-            </a>
-          </CardBody>
-        </Card>
-        <Card color="red" className="py-5">
-          <FontAwesomeIcon
-            icon={['fab', 'facebook']}
-            size="4x"
-            className="mx-auto"
-          />
-          <CardBody>
-            <CardTitle>Item 4</CardTitle>
-            <CardText style={{ fontSize: '20px', color: 'white' }}>
-              asd adsad adsad sa dasdsa das
-            </CardText>
-            <a
-              href="/"
-              className="d-flex justify-content-end"
-              style={{ fontSize: '20px', color: 'white' }}
-            >
-              Saiba Mais
-            </a>
-          </CardBody>
-        </Card>
+              <div className="text-white text-center d-flex flex-column align-items-center rgba-black-strong py-5 px-4">
+                <h5>Título com Icone</h5>
+                <CardTitle tag="h3" className="pt-2">
+                  <strong>Título</strong>
+                </CardTitle>
+                <p>Descrição</p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </Fade>
+      {/* <div className="row mb-3">
+        <div className="col-md-4">
+          <Card>
+            <CardBody className="color-red rounded-bottom">
+              <a className="activator waves-effect waves-light mr-4" />
+              <CardTitle>Card Title</CardTitle>
+              <hr className="hr-light" />
+              <CardText className="">
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="col-md-4">
+          <Card>
+            <CardBody className="color-black rounded-bottom">
+              <a className="activator waves-effect waves-light mr-4" />
+              <CardTitle>Card Title</CardTitle>
+              <hr className="hr-light" />
+              <CardText className="">
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="col-md-4">
+          <Card>
+            <CardBody className="color-red rounded-bottom">
+              <a className="activator waves-effect waves-light mr-4" />
+              <CardTitle>Card Title</CardTitle>
+              <hr className="hr-light" />
+              <CardText className="">
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
       </div>
-      <div className="mx-auto">
-        <Button color="red" size="lg" floating>
-          Conheça Todos os Produtos :)
-        </Button>
-      </div>
+      <div className="row">
+        <div className="col-md-4">
+          <Card>
+            <CardBody className="color-black rounded-bottom">
+              <a className="activator waves-effect waves-light mr-4" />
+              <CardTitle>Card Title</CardTitle>
+              <hr className="hr-light" />
+              <CardText className="">
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="col-md-4">
+          <Card>
+            <CardBody className="color-red rounded-bottom">
+              <a className="activator waves-effect waves-light mr-4" />
+              <CardTitle>Card Title</CardTitle>
+              <hr className="hr-light" />
+              <CardText className="">
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+        <div className="col-md-4">
+          <Card>
+            <CardBody className="color-black rounded-bottom">
+              <a className="activator waves-effect waves-light mr-4" />
+              <CardTitle>Card Title</CardTitle>
+              <hr className="hr-light" />
+              <CardText className="">
+                Some quick example text to build on the card title and make up
+                the bulk of the card&apos;s content.
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+      </div> */}
     </Container>
   );
 };

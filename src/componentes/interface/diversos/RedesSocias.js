@@ -1,13 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const RedesSociais = () => {
   return (
     <div>
-      <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" />
+      <a href="">
+        <FontAwesomeIcon color="white" icon={["fab", "facebook"]} size="2x" />
+      </a>
       <span className="mr-4" />
-      <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
+      <a href="">
+        <FontAwesomeIcon color="white" icon={["fab", "instagram"]} size="2x" />
+      </a>
     </div>
   );
 };

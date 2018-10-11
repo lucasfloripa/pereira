@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -8,14 +8,28 @@ import {
   NavItem,
   NavLink,
   Container
-} from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+} from "mdbreact";
+import { BrowserRouter as Router } from "react-router-dom";
 
-class BarraNav1 extends Component {
+//Componetes
+import RedesSocias from "../diversos/RedesSocias";
+
+class BarraNav extends Component {
   state = {
     collapse: false,
     isWideEnoght: false
   };
+
+  componentDidMount() {
+    const nav = document.querySelector(".navbar");
+    window.onscroll = () => {
+      if (window.pageYOffset > 100) {
+        nav.style.background = "#272F38";
+      } else {
+        nav.style.background = "transparent";
+      }
+    };
+  }
 
   onClick = () => {
     this.setState({
@@ -26,17 +40,14 @@ class BarraNav1 extends Component {
   render() {
     return (
       <Router>
-        <Navbar color="black" expand="md" dark scrolling>
+        <Navbar className="text-white" expand="md" fixed="top" dark scrolling>
           <Container>
-            <NavbarBrand href="/">
-              Pereira
-              <span className="text-danger">SC</span>
-            </NavbarBrand>
+            <NavbarBrand href="/">Pereira</NavbarBrand>
             {!this.state.isWideEnough && (
               <NavbarToggler onClick={this.onClick} />
             )}
             <Collapse isOpen={this.state.collapse} navbar>
-              <NavbarNav right>
+              <NavbarNav left>
                 <NavItem active>
                   <NavLink to="#">Home</NavLink>
                 </NavItem>
@@ -51,6 +62,7 @@ class BarraNav1 extends Component {
                 </NavItem>
               </NavbarNav>
             </Collapse>
+            <RedesSocias />
           </Container>
         </Navbar>
       </Router>
@@ -58,4 +70,4 @@ class BarraNav1 extends Component {
   }
 }
 
-export default BarraNav1;
+export default BarraNav;
