@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
 //Interface Componentes
-import BarraNav from "./componentes/interface/sections/BarraNav";
+import NavBar from "./componentes/interface/sections/NavBar";
 import Header from "./componentes/interface/sections/Header";
 import Produtos from "./componentes/interface/sections/Produtos";
 import Sobre from "./componentes/interface/sections/Sobre";
-// import SobreTitulo from "./componentes/interface/sections/SobreTitulo";
 import Contato from "./componentes/interface/sections/Contato";
 import Footer from "./componentes/interface/sections/Footer";
 
@@ -48,10 +47,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BarraNav />
+        <NavBar />
         <Header />
         <Produtos />
-        {/* <SobreTitulo /> */}
         <Sobre />
         <Contato />
         <Footer />

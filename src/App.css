@@ -1,4 +1,4 @@
-#main-area {
+#header {
   height: 100vh;
   background: #b3060e;
   background-attachment: fixed;
@@ -6,16 +6,6 @@
   background-position: 0 -300px;
   text-align: center;
   color: #fff;
-}
-
-.sobre-header {
-  height: 200px;
-  background: url("/img/media.jpg");
-  background-position: 0 -360px;
-  background-attachment: fixed;
-  color: #fff;
-  border-bottom: 1px #eee solid;
-  padding-top: 50px;
 }
 
 .nav-link:hover {
@@ -88,15 +78,38 @@
 }
 
 .zoom:hover {
-  transform: scale(
-    1.5
-  );
+  transform: scale(1.5);
 }
-
 .color-red {
   background: #b3060e;
 }
-
 .color-black {
   background: #272f38;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .mb-resp {
+    margin-bottom: 1.5em;
+  }
+  #header{
+    height: 185vh;
+  }
+  #header .container{
+    flex-direction: column !important;
+  }
+
+  #header .col-md-6:first-child{
+    margin-top: 14em;
+  }
+  #header .col-md-6:nth-child(2){
+    margin-top: 8.5em;
+  }
+}
+
+@media (max-width: 506px) {
+  .mb-resp-sobre {
+    margin-bottom: 1.5em;
+  }
 }

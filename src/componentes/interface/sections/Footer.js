@@ -10,12 +10,14 @@ class Footer extends Component {
 
   render() {
     return (
-      <Container fluid className="color-black p-3 text-white text-center">
-        <p>
-          Copyright &copy;
-          <span id="year" /> PereiraSC
-        </p>
-      </Container>
+      <footer id="footer">
+        <Container fluid className="color-black text-white text-center p-1">
+          <p>
+            Copyright &copy;
+            <span id="year" /> Pereira
+          </p>
+        </Container>
+      </footer>
     );
   }
 }
