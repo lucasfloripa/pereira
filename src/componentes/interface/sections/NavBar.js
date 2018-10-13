@@ -21,6 +21,12 @@ class BarraNav extends Component {
 
   componentDidMount() {
     const nav = document.querySelector(".navbar");
+
+    if (window.innerWidth < 768) {
+      nav.style.background = "#272F38";
+      return;
+    }
+
     window.onscroll = () => {
       if (window.pageYOffset > 100) {
         nav.style.background = "#272F38";
@@ -48,7 +54,7 @@ class BarraNav extends Component {
           scrolling
         >
           <Container className="p-1">
-            <NavbarBrand href="/">Pereira</NavbarBrand>
+            <NavbarBrand href="/">PereiraLogo</NavbarBrand>
             {!this.state.isWideEnough && (
               <NavbarToggler onClick={this.onClick} />
             )}
@@ -90,7 +96,7 @@ class BarraNav extends Component {
                   size="2x"
                 />
               </a>
-              <span className="mr-4" />
+              <span className="mr-3" />
               <a
                 href="https://www.instagram.com"
                 target="_blank"

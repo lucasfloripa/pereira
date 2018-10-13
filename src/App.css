@@ -94,22 +94,36 @@
     margin-bottom: 1.5em;
   }
   #header{
-    height: 185vh;
+    height: 195vh;
   }
   #header .container{
     flex-direction: column !important;
   }
-
   #header .col-md-6:first-child{
-    margin-top: 14em;
+    margin-top: 10em;
   }
   #header .col-md-6:nth-child(2){
-    margin-top: 8.5em;
+    margin-top: 14em;
   }
 }
 
 @media (max-width: 506px) {
   .mb-resp-sobre {
     margin-bottom: 1.5em;
+  }
+  #header{
+    height: 145vh;
+  }
+  #header .col-md-6:first-child{
+    margin-top: 10em;
+  }
+  #header .col-md-6:nth-child(2){
+    margin-top: 7em;
+  }
+}
+
+@media (max-width: 364px){
+  #produtos h3, #sobre h3{
+    font-size: 2.5rem;
   }
 }

@@ -54,37 +54,7 @@ const Contato = () => {
                   <FontAwesomeIcon icon="envelope" color="red" size="4x" />
                 </div>
                 <div className="align-self-center p-4" style={{ width: "75%" }}>
-                  precisoPegarOEmailDele@gmail.com
-                </div>
-              </div>
-              <div className="d-md-none d-flex">
-                <div
-                  className="d-flex justify-content-center p-4"
-                  style={{ width: "25%" }}
-                >
-                  <FontAwesomeIcon
-                    icon={["fab", "facebook"]}
-                    color="red"
-                    size="4x"
-                  />
-                </div>
-                <div className="align-self-center p-4" style={{ width: "75%" }}>
-                  facebook.com
-                </div>
-              </div>
-              <div className="d-md-none d-flex">
-                <div
-                  className="d-flex justify-content-center p-4"
-                  style={{ width: "25%" }}
-                >
-                  <FontAwesomeIcon
-                    icon={["fab", "instagram"]}
-                    color="red"
-                    size="4x"
-                  />
-                </div>
-                <div className="align-self-center p-4" style={{ width: "75%" }}>
-                  instagram.com
+                  pereira@gmail.com
                 </div>
               </div>
             </div>
@@ -113,6 +83,37 @@ const Contato = () => {
             </div>
           </div>
         </Fade>
+      </Container>
+      <Container
+        className="d-block d-md-none color-black fixed-bottom p-2"
+        fluid
+      >
+        <div className="row justify-content-around align-items-center text-white">
+          <a href="https://www.facebook.com">
+            <FontAwesomeIcon
+              icon={["fab", "facebook"]}
+              color="white"
+              size="2x"
+            />
+          </a>
+          <a href="https://www.instagram.com">
+            <FontAwesomeIcon
+              icon={["fab", "instagram"]}
+              color="white"
+              size="2x"
+            />
+          </a>
+          <a href="https://wa.me/5548999470129">
+            <FontAwesomeIcon
+              icon={["fab", "whatsapp"]}
+              color="white"
+              size="2x"
+            />
+          </a>
+          <a href="tel: +55 48 30345530">
+            <FontAwesomeIcon icon="phone" color="white" size="2x" />
+          </a>
+        </div>
       </Container>
     </section>
   );

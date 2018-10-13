@@ -28,7 +28,7 @@ import {
   faUser,
   faComments
 } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 library.add(
   faPhone,
   faEnvelope,
@@ -40,7 +40,8 @@ library.add(
   faDollarSign,
   faMapPin,
   faUser,
-  faComments
+  faComments,
+  faWhatsapp
 );
 
 class App extends Component {
