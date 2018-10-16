@@ -87,6 +87,28 @@
   background: #272f38;
 }
 
+/* WhatsApp Icon */
+.icon-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+  border-radius:50px;
+  border: 0.5px solid #fff;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+}
+.my-icon-float{
+	margin-top:16px;
+}
+
+
+
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -123,7 +145,7 @@
 }
 
 @media (max-width: 364px){
-  #produtos h3, #sobre h3{
+  #produtos h3, #sobre h3, #contato h3{
     font-size: 2.5rem;
   }
 }

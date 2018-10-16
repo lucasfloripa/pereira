@@ -1,11 +1,12 @@
 import React from "react";
 
-import { Container, Card, CardBody, CardTitle, Input, Button } from "mdbreact";
+import { Container } from "mdbreact";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ContatoFormEnviarEmail from "../contato_componentes/ContatoFormEnviarEmail";
+import ContatoInfo from "../contato_componentes/ContatoInfo";
+import ContatoFooterResp from "../contato_componentes/ContatoFooterResp";
+
 import Fade from "react-reveal/Fade";
-
-import Map from "../diversos/GoogleMap";
 
 const Contato = () => {
   return (
@@ -20,57 +21,10 @@ const Contato = () => {
         <Fade buttom>
           <div className="row my-5">
             <div className="col-md-6 mb-resp">
-              <div className="d-flex">
-                <div
-                  className="d-flex justify-content-center p-4"
-                  style={{ width: "25%" }}
-                >
-                  <FontAwesomeIcon icon="map-pin" color="red" size="4x" />
-                </div>
-                <div className="align-self-center p-4" style={{ width: "75%" }}>
-                  R. Eliane Mota, 2505 - Ipiranga, São José - SC
-                  <br />
-                  88110-840.
-                </div>
-              </div>
-              <div className="d-flex">
-                <div
-                  className="d-flex justify-content-center p-4"
-                  style={{ width: "25%" }}
-                >
-                  <FontAwesomeIcon icon="phone" color="red" size="4x" />
-                </div>
-                <div className="align-self-center p-4" style={{ width: "75%" }}>
-                  Fixo: (48)3246-9892
-                  <br />
-                  WhatsApp: (48)99947-0129
-                </div>
-              </div>
-              <div className="d-flex">
-                <div
-                  className="d-flex justify-content-center p-4"
-                  style={{ width: "25%" }}
-                >
-                  <FontAwesomeIcon icon="envelope" color="red" size="4x" />
-                </div>
-                <div className="align-self-center p-4" style={{ width: "75%" }}>
-                  pereira@gmail.com
-                </div>
-              </div>
+              <ContatoInfo />
             </div>
             <div className="col-md-6">
-              <Card>
-                <CardBody>
-                  <CardTitle>Entre em Contato!</CardTitle>
-                  <Input label="Nome" icon="user" />
-                  <Input label="Email" icon="envelope" />
-                  <Input label="Telefone" icon="phone" />
-                  <Input label="Mensagem" icon="comments" type="textarea" />
-                  <Button color="red" block floating>
-                    Enviar
-                  </Button>
-                </CardBody>
-              </Card>
+              <ContatoFormEnviarEmail />
             </div>
           </div>
         </Fade>
@@ -79,7 +33,18 @@ const Contato = () => {
         <Fade buttom>
           <div className="row">
             <div className="col">
-              <Map />
+              <div style={{width: '100%'}}>
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=R.%20Eliane%20Mota%2C%202505%20-%20Ipiranga%20S%C3%A3o%20Jos%C3%A9%20-%20SC%2088110-840.%20Brasil+(Pereira%20Descart%C3%A1veis)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                />
+              </div>
+              <br />
             </div>
           </div>
         </Fade>
@@ -88,32 +53,7 @@ const Contato = () => {
         className="d-block d-md-none color-black fixed-bottom p-2"
         fluid
       >
-        <div className="row justify-content-around align-items-center text-white">
-          <a href="https://www.facebook.com">
-            <FontAwesomeIcon
-              icon={["fab", "facebook"]}
-              color="white"
-              size="2x"
-            />
-          </a>
-          <a href="https://www.instagram.com">
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              color="white"
-              size="2x"
-            />
-          </a>
-          <a href="https://wa.me/5548999470129">
-            <FontAwesomeIcon
-              icon={["fab", "whatsapp"]}
-              color="white"
-              size="2x"
-            />
-          </a>
-          <a href="tel: +55 48 30345530">
-            <FontAwesomeIcon icon="phone" color="white" size="2x" />
-          </a>
-        </div>
+        <ContatoFooterResp />
       </Container>
     </section>
   );

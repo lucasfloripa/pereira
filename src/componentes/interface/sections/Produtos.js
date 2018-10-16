@@ -3,6 +3,8 @@ import { Container, Card, CardTitle } from "mdbreact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 
+import ContatoWhatsAppIcon from "../contato_componentes/ContatoWhatsAppIcon";
+
 class Produtos extends Component {
   componentDidMount() {
     if (window.innerWidth > 768) {
@@ -10,10 +12,10 @@ class Produtos extends Component {
         element.classList.add("zoom");
       });
     }
-    if(window.innerWidth < 364){
+    if (window.innerWidth < 364) {
       Array.from(document.querySelectorAll(".productH3")).forEach(h3 => {
-        h3.style.fontSize = '2rem';
-      })
+        h3.style.fontSize = "2rem";
+      });
     }
   }
 
@@ -21,6 +23,11 @@ class Produtos extends Component {
     return (
       <section id="produtos">
         <Container className="text-center p-5 ">
+          <div id="whatsapp-icon" className="d-none d-md-block" style={{ width: "200%" }}>
+            <Fade buttom>
+              <ContatoWhatsAppIcon />
+            </Fade>
+          </div>
           <Fade buttom>
             <h3
               className="hr-text mb-resp font-weight-bold display-4"

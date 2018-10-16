@@ -21,6 +21,7 @@ class BarraNav extends Component {
 
   componentDidMount() {
     const nav = document.querySelector(".navbar");
+    const iconFloat = document.querySelector(".icon-float");
 
     if (window.innerWidth < 768) {
       nav.style.background = "#272F38";
@@ -28,10 +29,17 @@ class BarraNav extends Component {
     }
 
     window.onscroll = () => {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 50) {
         nav.style.background = "#272F38";
+
+        iconFloat.style.background = "#25d366";
+        iconFloat.style.boxShadow = "2px 2px 3px #999"
+
       } else {
         nav.style.background = "transparent";
+
+        iconFloat.style.background = "transparent";
+        iconFloat.style.boxShadow = "none"
       }
     };
   }
@@ -82,8 +90,6 @@ class BarraNav extends Component {
                 </NavItem>
               </NavbarNav>
             </Collapse>
-
-            {/* Redes Socias */}
             <div className="d-none d-md-block">
               <a
                 href="https://www.facebook.com"
@@ -91,8 +97,8 @@ class BarraNav extends Component {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
-                  color="white"
                   icon={["fab", "facebook"]}
+                  color="white"
                   size="2x"
                 />
               </a>
@@ -103,8 +109,8 @@ class BarraNav extends Component {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
-                  color="white"
                   icon={["fab", "instagram"]}
+                  color="white"
                   size="2x"
                 />
               </a>
