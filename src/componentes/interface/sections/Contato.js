@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 const Contato = () => {
   return (
-    <section id="contato">
+    <section id="contato" className="pt-5">
       <Container className="p-5">
         <Fade buttom>
           <h3

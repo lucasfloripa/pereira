@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Container } from "mdbreact";
 import $ from "jquery";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 
-import FooterInfos from "../footer_componentes/FooterInfos";
+import FooterInfos1 from "../footer_componentes/FooterInfos1";
+import FooterInfos2 from "../footer_componentes/FooterInfos2";
 
 class Footer extends Component {
   componentDidMount() {
@@ -17,13 +17,16 @@ class Footer extends Component {
       <footer id="footer">
         <Container
           fluid
-          className="text-white text-center pt-5 px-5"
+          className="text-white pt-5 px-5"
           style={{backgroundColor: 'black'}}
         >
           <Fade buttom>
             <div className="row">
               <div className="col-md-4 mx-auto">
-                <FooterInfos />
+                <FooterInfos1 />
+              </div>
+              <div className="col-md-4 mx-auto">
+                <FooterInfos2 />
               </div>
               <div className="col-md-4 mx-auto">
                 Logo

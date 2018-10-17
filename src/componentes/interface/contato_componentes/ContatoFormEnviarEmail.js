@@ -13,14 +13,14 @@ class FormEnviarEmail extends Component {
   onSubmit = async e => {
     e.preventDefault();
 
-    const { name, email, phone, message } = this.state;
+    // const { name, email, phone, message } = this.state;
 
-    const form = await axios.post("/api/form", {
-      name,
-      email,
-      phone,
-      message
-    });
+    // const form = await axios.post("/api/form", {
+    //   name,
+    //   email,
+    //   phone,
+    //   message
+    // });
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });

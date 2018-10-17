@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Animation } from "mdbreact";
-import HeaderCarousel from "../header_componentes/HeaderCarousel";
+// import HeaderCarousel from "../header_componentes/HeaderCarousel";
 
 class Header extends Component {
   componentDidMount() {

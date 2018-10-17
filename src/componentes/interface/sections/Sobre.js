@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 const Sobre = () => {
   return (
-    <section id="sobre">
+    <section id="sobre" className="pt-5">
       <Container fluid className="color-red text-center text-white p-5">
         <Fade buttom>
           <h3

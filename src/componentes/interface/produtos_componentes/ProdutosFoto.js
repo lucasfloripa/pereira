@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardTitle} from 'mdbreact';
+import { Card, CardTitle } from "mdbreact";
 
 function ProdutosFoto() {
   return (

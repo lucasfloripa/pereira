@@ -12,7 +12,7 @@ import {
 
 import Scrollchor from "react-scrollchor";
 import NavbarIcones from "../navbar_componentes/NavbarIcones";
-import NavbarSuperior from "../navbar_componentes/NavbarSuperior";
+// import NavbarSuperior from "../navbar_componentes/NavbarSuperior";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -68,7 +68,9 @@ class BarraNav extends Component {
             <NavbarSuperior />
           </Container> */}
           <Container className="p-1">
-            <NavbarBrand href="/">PereiraLogo</NavbarBrand>
+            <NavbarBrand href="https://lucasfloripa.github.io/pereira/">
+              PereiraLogo
+            </NavbarBrand>
             {!this.state.isWideEnough && (
               <NavbarToggler onClick={this.onClick} />
             )}

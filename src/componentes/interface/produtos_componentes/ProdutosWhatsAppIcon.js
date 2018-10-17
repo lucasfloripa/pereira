@@ -9,6 +9,7 @@ class ContatoWhatsAppIcon extends Component {
         href="https://wa.me/5548999470129"
         className="icon-float"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon
           icon={["fab", "whatsapp"]}

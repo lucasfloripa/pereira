@@ -5,26 +5,24 @@ import LocalizacaoGoogleMap from "../localizacao_componentes/LocalizacaoGoogleMa
 
 export default function Localizacao() {
   return (
-    <Container
-      id="localizacao"
-      className="color-red text-white text-center p-5"
-      fluid
-    >
-      <Fade buttom>
-        <h3
-          className="hr-text-sobre font-weight-bold display-4"
-          data-content="Localização"
-        />
-        <p className="lead">R. Eliane Mota, 2505 - Ipiranga, São José - SC</p>
-        <p className="lead">CEP: 88110-840.</p>
-      </Fade>
-      <Fade buttom>
-        <div className="row">
-          <div className="col">
-            <LocalizacaoGoogleMap />
+    <section id="localizacao" className="pt-5">
+      <Container className="color-red text-white text-center p-5" fluid>
+        <Fade buttom>
+          <h3
+            className="hr-text-sobre font-weight-bold display-4"
+            data-content="Endereço"
+          />
+          <p className="lead">R. Eliane Mota, 2505 - Ipiranga, São José - SC</p>
+          <p className="lead">CEP: 88110-840.</p>
+        </Fade>
+        <Fade buttom>
+          <div className="row">
+            <div className="col">
+              <LocalizacaoGoogleMap />
+            </div>
           </div>
-        </div>
-      </Fade>
-    </Container>
+        </Fade>
+      </Container>
+    </section>
   );
 }
