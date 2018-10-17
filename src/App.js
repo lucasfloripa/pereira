@@ -6,6 +6,7 @@ import Header from "./componentes/interface/sections/Header";
 import Produtos from "./componentes/interface/sections/Produtos";
 import Sobre from "./componentes/interface/sections/Sobre";
 import Contato from "./componentes/interface/sections/Contato";
+import Localizacao from "./componentes/interface/sections/Localizacao";
 import Footer from "./componentes/interface/sections/Footer";
 
 //CSS
@@ -26,7 +27,9 @@ import {
   faDollarSign,
   faMapPin,
   faUser,
-  faComments
+  faComments,
+  faClock,
+  faBuilding
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -45,7 +48,9 @@ library.add(
   faMapPin,
   faUser,
   faComments,
-  faWhatsapp
+  faWhatsapp,
+  faClock,
+  faBuilding
 );
 
 class App extends Component {
@@ -57,6 +62,7 @@ class App extends Component {
         <Produtos />
         <Sobre />
         <Contato />
+        <Localizacao />
         <Footer />
       </div>
     );

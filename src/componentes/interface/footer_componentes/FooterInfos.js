@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ContatoInfo = () => {
+const FooterInfos = () => {
   return (
     <React.Fragment>
       <div className="d-flex">
@@ -9,7 +9,29 @@ const ContatoInfo = () => {
           className="d-flex justify-content-center p-4"
           style={{ width: "25%" }}
         >
-          <FontAwesomeIcon icon="map-pin" color="red" size="4x" />
+          <FontAwesomeIcon icon="building" color="red" size="2x" />
+        </div>
+        <div className="align-self-center p-4" style={{ width: "75%" }}>
+          Pereira Higiene, Limpeza e Descartáveis
+        </div>
+      </div>
+      <div className="d-flex">
+        <div
+          className="d-flex justify-content-center p-4"
+          style={{ width: "25%" }}
+        >
+          <FontAwesomeIcon icon="clock" color="red" size="2x" />
+        </div>
+        <div className="align-self-center p-4" style={{ width: "75%" }}>
+          Segunda a Sexta: 08:00 - 19:00
+        </div>
+      </div>
+      <div className="d-flex">
+        <div
+          className="d-flex justify-content-center p-4"
+          style={{ width: "25%" }}
+        >
+          <FontAwesomeIcon icon="map-pin" color="red" size="2x" />
         </div>
         <div className="align-self-center p-4" style={{ width: "75%" }}>
           R. Eliane Mota, 2505 - Ipiranga, São José - SC
@@ -22,7 +44,7 @@ const ContatoInfo = () => {
           className="d-flex justify-content-center p-4"
           style={{ width: "25%" }}
         >
-          <FontAwesomeIcon icon="phone" color="red" size="4x" />
+          <FontAwesomeIcon icon="phone" color="red" size="2x" />
         </div>
         <div className="align-self-center p-4" style={{ width: "75%" }}>
           Fixo: (48)3246-9892
@@ -35,7 +57,7 @@ const ContatoInfo = () => {
           className="d-flex justify-content-center p-4"
           style={{ width: "25%" }}
         >
-          <FontAwesomeIcon icon="envelope" color="red" size="4x" />
+          <FontAwesomeIcon icon="envelope" color="red" size="2x" />
         </div>
         <div className="align-self-center p-4" style={{ width: "75%" }}>
           pereira@gmail.com
@@ -45,4 +67,4 @@ const ContatoInfo = () => {
   );
 };
 
-export default ContatoInfo;
+export default FooterInfos;

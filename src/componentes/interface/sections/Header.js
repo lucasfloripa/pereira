@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Container, Animation } from "mdbreact";
+import HeaderCarousel from "../header_componentes/HeaderCarousel";
 
 class Header extends Component {
-  componentDidMount(){
-    const headerTitle = document.querySelector('#header h3');
-    const headerParagraph = document.querySelector('#header p');
+  componentDidMount() {
+    const headerTitle = document.querySelector("#header h3");
+    const headerParagraph = document.querySelector("#header p");
 
-    if(window.innerWidth < 364){
-      headerTitle.style.fontSize = '4rem';
-      headerParagraph.style.fontSize = '2rem';
+    if (window.innerWidth < 364) {
+      headerTitle.style.fontSize = "4rem";
+      headerParagraph.style.fontSize = "2rem";
     }
   }
 
@@ -26,7 +27,8 @@ class Header extends Component {
           </div>
           <div className="col-md-6">
             <Animation type="fadeInRight">
-              <img src="/img/warung.jpg" className="img-fluid" alt="" />
+              {/* <HeaderCarousel /> */}
+              {/* <img src="/img/warung.jpg" className="img-fluid" alt="" /> */}
             </Animation>
           </div>
         </Container>

@@ -3,7 +3,7 @@ import { Container, Card, CardTitle } from "mdbreact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 
-import ContatoWhatsAppIcon from "../contato_componentes/ContatoWhatsAppIcon";
+import ProdutosWhatsAppIcon from "../produtos_componentes/ProdutosWhatsAppIcon";
 
 class Produtos extends Component {
   componentDidMount() {
@@ -23,9 +23,13 @@ class Produtos extends Component {
     return (
       <section id="produtos">
         <Container className="text-center p-5 ">
-          <div id="whatsapp-icon" className="d-none d-md-block" style={{ width: "200%" }}>
+          <div
+            id="whatsapp-icon"
+            className="d-none d-md-block"
+            style={{ width: "200%" }}
+          >
             <Fade buttom>
-              <ContatoWhatsAppIcon />
+              <ProdutosWhatsAppIcon />
             </Fade>
           </div>
           <Fade buttom>

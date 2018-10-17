@@ -10,8 +10,10 @@ import {
   Container
 } from "mdbreact";
 
+import NavbarIcones from "../navbar_componentes/NavbarIcones";
+import NavbarSuperior from "../navbar_componentes/NavbarSuperior";
+
 import { BrowserRouter as Router } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class BarraNav extends Component {
   state = {
@@ -21,6 +23,7 @@ class BarraNav extends Component {
 
   componentDidMount() {
     const nav = document.querySelector(".navbar");
+    // const navSuperior = document.querySelector("#navbar-superior");
     const iconFloat = document.querySelector(".icon-float");
 
     if (window.innerWidth < 768) {
@@ -31,15 +34,14 @@ class BarraNav extends Component {
     window.onscroll = () => {
       if (window.pageYOffset > 50) {
         nav.style.background = "#272F38";
-
+        // navSuperior.style.display = "none";
         iconFloat.style.background = "#25d366";
-        iconFloat.style.boxShadow = "2px 2px 3px #999"
-
+        iconFloat.style.boxShadow = "2px 2px 3px #999";
       } else {
         nav.style.background = "transparent";
-
+        // navSuperior.style.display = "block";
         iconFloat.style.background = "transparent";
-        iconFloat.style.boxShadow = "none"
+        iconFloat.style.boxShadow = "none";
       }
     };
   }
@@ -55,12 +57,15 @@ class BarraNav extends Component {
       <Router>
         <Navbar
           id="nav"
-          className="text-white"
+          className="text-white d-flex flex-column px-0 pt-0"
           expand="md"
           fixed="top"
           dark
           scrolling
         >
+          {/* <Container id="navbar-superior" fluid>
+            <NavbarSuperior />
+          </Container> */}
           <Container className="p-1">
             <NavbarBrand href="/">PereiraLogo</NavbarBrand>
             {!this.state.isWideEnough && (
@@ -88,32 +93,20 @@ class BarraNav extends Component {
                     Contato
                   </a>
                 </NavItem>
+                <NavItem>
+                  <a href="#localizacao" className="nav-link">
+                    Localização
+                  </a>
+                </NavItem>
+                <NavItem>
+                  <a href="#footer" className="nav-link">
+                    Informações
+                  </a>
+                </NavItem>
               </NavbarNav>
             </Collapse>
             <div className="d-none d-md-block">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "facebook"]}
-                  color="white"
-                  size="2x"
-                />
-              </a>
-              <span className="mr-3" />
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "instagram"]}
-                  color="white"
-                  size="2x"
-                />
-              </a>
+              <NavbarIcones />
             </div>
           </Container>
         </Navbar>
