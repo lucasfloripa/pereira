@@ -10,6 +10,7 @@ import {
   Container
 } from "mdbreact";
 
+import Scrollchor from "react-scrollchor";
 import NavbarIcones from "../navbar_componentes/NavbarIcones";
 import NavbarSuperior from "../navbar_componentes/NavbarSuperior";
 
@@ -74,34 +75,58 @@ class BarraNav extends Component {
             <Collapse isOpen={this.state.collapse} navbar>
               <NavbarNav left>
                 <NavItem>
-                  <a href="#home" className="nav-link">
+                  <Scrollchor
+                    to="#home"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
                     Home
-                  </a>
+                  </Scrollchor>
                 </NavItem>
                 <NavItem>
-                  <a href="#produtos" className="nav-link">
+                  <Scrollchor
+                    to="#produtos"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
                     Produtos
-                  </a>
+                  </Scrollchor>
                 </NavItem>
                 <NavItem>
-                  <a href="#sobre" className="nav-link">
+                  <Scrollchor
+                    to="#sobre"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
                     Sobre
-                  </a>
+                  </Scrollchor>
                 </NavItem>
                 <NavItem>
-                  <a href="#contato" className="nav-link">
+                  <Scrollchor
+                    to="#contato"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
                     Contato
-                  </a>
+                  </Scrollchor>
                 </NavItem>
                 <NavItem>
-                  <a href="#localizacao" className="nav-link">
+                  <Scrollchor
+                    to="#localizacao"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
                     Localização
-                  </a>
+                  </Scrollchor>
                 </NavItem>
                 <NavItem>
-                  <a href="#footer" className="nav-link">
+                  <Scrollchor
+                    to="#footer"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
                     Informações
-                  </a>
+                  </Scrollchor>
                 </NavItem>
               </NavbarNav>
             </Collapse>

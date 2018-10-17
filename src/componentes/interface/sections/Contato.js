@@ -20,9 +20,9 @@ const Contato = () => {
         <Fade buttom>
           <div className="row my-5">
             <div className="col-md-4 mb-resp">
-              <h3>GOSTARIA DE MAIS INFORMAÇÕES? FALE CONOSCO.</h3>
+              <h4>GOSTARIA DE MAIS INFORMAÇÕES? FALE CONOSCO.</h4>
               <hr></hr>
-              <p className="lead">Por que você vai adiar a compra de um produto que pode te trazer tantas vantagens agora? A Pereira tem para oferecer o melhor dos produtos de limpeza, higiene e descartáveis do mercado. Com os produtos da nossa empresa, você terá todas as ferramentas necessárias para se livrar daquele lixo e sujeira que tanto lhe incomôdam!</p>
+              <p className="lead">Por que você vai adiar a compra de um produto que pode te trazer tantas vantagens agora? A Pereira tem para oferecer o melhores itens de limpeza, higiene e descartáveis do mercado. Com os nossos produtos,você terá todas as ferramentas necessárias para se livrar daquele lixo e sujeira que tanto lhe incomôdam!</p>
             </div>
             <div className="col-md-8">
               <ContatoFormEnviarEmail />

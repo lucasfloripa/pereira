@@ -17,7 +17,8 @@ class Footer extends Component {
       <footer id="footer">
         <Container
           fluid
-          className="color-black text-white text-center pt-5 px-5"
+          className="text-white text-center pt-5 px-5"
+          style={{backgroundColor: 'black'}}
         >
           <Fade buttom>
             <div className="row">
@@ -28,7 +29,7 @@ class Footer extends Component {
                 Logo
               </div>
             </div>
-            <div className="row pt-5">
+            <div className="row pb-resp pt-5">
               <p>
                 Copyright &copy;
                 <span id="year" /> Pereira <span className="mr-3"></span>| Lucas Gonçalves |

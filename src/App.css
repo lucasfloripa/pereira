@@ -87,6 +87,10 @@
   background: #272f38;
 }
 
+#footer p {
+  font-size: 0.75rem;
+}
+
 /* WhatsApp Icon */
 .icon-float{
 	position:fixed;
@@ -115,9 +119,9 @@
   .mb-resp {
     margin-bottom: 1.5em;
   }
-  #header{
+  /* #header{
     height: 195vh;
-  }
+  } */
   #header .container{
     flex-direction: column !important;
   }
@@ -133,19 +137,25 @@
   .mb-resp-sobre {
     margin-bottom: 1.5em;
   }
-  #header{
-    height: 145vh;
+  .pb-resp{
+    padding-bottom: 3rem;
   }
+  /* #header{
+    height: 145vh;
+  } */
   #header .col-md-6:first-child{
     margin-top: 10em;
   }
   #header .col-md-6:nth-child(2){
     margin-top: 7em;
   }
+  
 }
 
 @media (max-width: 364px){
   #produtos h3, #sobre h3, #contato h3, #localizacao h3{
     font-size: 2.5rem;
   }
+  
+
 }

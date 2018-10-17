@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Container, Card, CardTitle } from "mdbreact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Container } from "mdbreact";
 import Fade from "react-reveal/Fade";
 
 import ProdutosWhatsAppIcon from "../produtos_componentes/ProdutosWhatsAppIcon";
+import ProdutosItem from "../produtos_componentes/ProdutosItem";
+import ProdutosFoto from "../produtos_componentes/ProdutosFoto";
 
 class Produtos extends Component {
   componentDidMount() {
@@ -42,120 +43,75 @@ class Produtos extends Component {
           <Fade buttom>
             <div className="row my-5">
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
             </div>
           </Fade>
           <Fade buttom>
             <div className="row mb-5">
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
             </div>
           </Fade>
           <Fade buttom>
             <div className="row mb-5">
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <FontAwesomeIcon icon="car" color="red" size="4x" />
-                  </div>
-                  <div className="align-self-center p-2">
-                    <h3 className="productH3">Nome Produto</h3>
-                  </div>
-                </div>
-                <p className="lead">Descrição do Produto</p>
+                <ProdutosItem
+                  icon="car"
+                  nome="Nome Produto"
+                  descricao="Descrição Produto"
+                />
               </div>
             </div>
           </Fade>
           <Fade butoom>
             <div className="row">
               <div className="col-md-10 mx-auto">
-                <Card
-                  style={{
-                    backgroundImage:
-                      "url('https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg')"
-                  }}
-                >
-                  <div className="text-white text-center d-flex flex-column align-items-center rgba-black-strong py-5 px-4">
-                    <h5>Título com Icone</h5>
-                    <CardTitle tag="h3" className="pt-2">
-                      <strong>Título</strong>
-                    </CardTitle>
-                    <p>Descrição</p>
-                  </div>
-                </Card>
+                <ProdutosFoto />
               </div>
             </div>
           </Fade>

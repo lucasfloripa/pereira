@@ -6,7 +6,7 @@ const FooterInfos = () => {
     <React.Fragment>
       <div className="d-flex">
         <div
-          className="d-flex justify-content-center p-4"
+          className="d-flex justify-content-center align-self-center  p-4"
           style={{ width: "25%" }}
         >
           <FontAwesomeIcon icon="building" color="red" size="2x" />
@@ -28,7 +28,7 @@ const FooterInfos = () => {
       </div>
       <div className="d-flex">
         <div
-          className="d-flex justify-content-center p-4"
+          className="d-flex justify-content-center align-self-center p-4"
           style={{ width: "25%" }}
         >
           <FontAwesomeIcon icon="map-pin" color="red" size="2x" />
@@ -41,7 +41,7 @@ const FooterInfos = () => {
       </div>
       <div className="d-flex">
         <div
-          className="d-flex justify-content-center p-4"
+          className="d-flex justify-content-center align-self-center  p-4"
           style={{ width: "25%" }}
         >
           <FontAwesomeIcon icon="phone" color="red" size="2x" />
