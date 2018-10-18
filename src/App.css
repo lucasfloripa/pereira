@@ -1,3 +1,7 @@
+* {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
 #header {
   height: 100vh;
   background: #b3060e;
@@ -92,44 +96,34 @@
 }
 
 /* WhatsApp Icon */
-.icon-float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-  border-radius:50px;
+.icon-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
   border: 0.5px solid #fff;
-	text-align:center;
-  font-size:30px;
+  text-align: center;
+  font-size: 30px;
   box-shadow: 2px 2px 3px #999;
 }
-.my-icon-float{
-	margin-top:16px;
+.my-icon-float {
+  margin-top: 16px;
 }
 
-
-
-
 /* Media Queries */
+@media (max-width: 992px) {
+  #header h1 {
+    font-size: 4rem;
+  }
+}
 
 @media (max-width: 768px) {
   .mb-resp {
     margin-bottom: 1.5em;
-  }
-  /* #header{
-    height: 195vh;
-  } */
-  #header .container{
-    flex-direction: column !important;
-  }
-  #header .col-md-6:first-child{
-    margin-top: 10em;
-  }
-  #header .col-md-6:nth-child(2){
-    margin-top: 14em;
   }
 }
 
@@ -137,25 +131,30 @@
   .mb-resp-sobre {
     margin-bottom: 1.5em;
   }
-  .pb-resp{
+  .pb-resp {
     padding-bottom: 3rem;
   }
-  /* #header{
-    height: 145vh;
-  } */
-  #header .col-md-6:first-child{
-    margin-top: 10em;
+
+  #header h1 {
+    font-size: 3rem;
   }
-  #header .col-md-6:nth-child(2){
-    margin-top: 7em;
-  }
-  
 }
 
-@media (max-width: 364px){
-  #produtos h3, #sobre h3, #contato h3, #localizacao h3{
+@media (max-width: 364px) {
+  #header h1,
+  #produtos h1,
+  #sobre h1,
+  #contato h1,
+  #localizacao h1 {
     font-size: 2.5rem;
   }
-  
-
+  #header .col-md-6:first-child {
+    margin-bottom: 2em;
+  }
+  #header {
+    height: 90vh;
+  }
+  #footer {
+    padding-top: 1.5rem;
+  }
 }

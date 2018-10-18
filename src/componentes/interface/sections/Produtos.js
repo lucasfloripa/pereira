@@ -34,7 +34,7 @@ class Produtos extends Component {
             </Fade>
           </div>
           <Fade buttom>
-            <h3
+            <h1
               className="hr-text mb-resp font-weight-bold display-4"
               data-content="Nossos Produtos"
             />

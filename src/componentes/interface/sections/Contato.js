@@ -12,7 +12,7 @@ const Contato = () => {
     <section id="contato" className="pt-5">
       <Container className="p-5">
         <Fade buttom>
-          <h3
+          <h1
             className="hr-text font-weight-bold display-4"
             data-content="Contato"
           />

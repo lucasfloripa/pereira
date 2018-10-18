@@ -14,29 +14,25 @@ class Footer extends Component {
 
   render() {
     return (
-      <footer id="footer">
-        <Container
-          fluid
-          className="text-white pt-5 px-5"
-          style={{backgroundColor: 'black'}}
-        >
+      <footer id="footer" style={{ backgroundColor: "black" }}>
+        <Container fluid className="text-white pt-5 px-5">
           <Fade buttom>
             <div className="row">
-              <div className="col-md-4 mx-auto">
+              <div className="col-md-4">
                 <FooterInfos1 />
               </div>
-              <div className="col-md-4 mx-auto">
+              <div className="col-md-4">
                 <FooterInfos2 />
               </div>
-              <div className="col-md-4 mx-auto">
-                Logo
-              </div>
+              <div className="col-md-4">PereiraLogo</div>
             </div>
             <div className="row pb-resp pt-5">
-              <p>
+              <p className="p-0 d-block">
                 Copyright &copy;
-                <span id="year" /> Pereira <span className="mr-3"></span>| Lucas Gonçalves |
+                <span id="year" /> PereiraSC
               </p>
+              <span className="mr-3"></span>
+              <p>| Design por Lucas Gonçalves |</p>
             </div>
           </Fade>
         </Container>

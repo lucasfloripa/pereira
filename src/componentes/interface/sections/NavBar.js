@@ -12,7 +12,6 @@ import {
 
 import Scrollchor from "react-scrollchor";
 import NavbarIcones from "../navbar_componentes/NavbarIcones";
-// import NavbarSuperior from "../navbar_componentes/NavbarSuperior";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -24,7 +23,6 @@ class BarraNav extends Component {
 
   componentDidMount() {
     const nav = document.querySelector(".navbar");
-    // const navSuperior = document.querySelector("#navbar-superior");
     const iconFloat = document.querySelector(".icon-float");
 
     if (window.innerWidth < 768) {
@@ -35,12 +33,10 @@ class BarraNav extends Component {
     window.onscroll = () => {
       if (window.pageYOffset > 50) {
         nav.style.background = "#272F38";
-        // navSuperior.style.display = "none";
         iconFloat.style.background = "#25d366";
         iconFloat.style.boxShadow = "2px 2px 3px #999";
       } else {
         nav.style.background = "transparent";
-        // navSuperior.style.display = "block";
         iconFloat.style.background = "transparent";
         iconFloat.style.boxShadow = "none";
       }
@@ -64,9 +60,6 @@ class BarraNav extends Component {
           dark
           scrolling
         >
-          {/* <Container id="navbar-superior" fluid>
-            <NavbarSuperior />
-          </Container> */}
           <Container className="p-1">
             <NavbarBrand href="https://lucasfloripa.github.io/pereira/">
               PereiraLogo

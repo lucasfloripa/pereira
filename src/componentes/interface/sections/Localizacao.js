@@ -8,7 +8,7 @@ export default function Localizacao() {
     <section id="localizacao" className="pt-5">
       <Container className="color-red text-white text-center p-5" fluid>
         <Fade buttom>
-          <h3
+          <h1
             className="hr-text-sobre font-weight-bold display-4"
             data-content="Endereço"
           />

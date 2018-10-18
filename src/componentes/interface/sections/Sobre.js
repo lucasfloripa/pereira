@@ -8,7 +8,7 @@ const Sobre = () => {
     <section id="sobre" className="pt-5">
       <Container fluid className="color-red text-center text-white p-5">
         <Fade buttom>
-          <h3
+          <h1
             className="hr-text-sobre mb-resp-sobre font-weight-bold display-4"
             data-content="Quem Somos"
           />
