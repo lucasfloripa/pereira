@@ -10,11 +10,10 @@ function ProdutosFoto() {
       }}
     >
       <div className="text-white text-center d-flex flex-column align-items-center rgba-black-strong py-5 px-4">
-        <h5>Título com Icone</h5>
         <CardTitle tag="h3" className="pt-2">
-          <strong>Título</strong>
+          <strong>Aluguel de Equipamentos</strong>
         </CardTitle>
-        <p>Descrição</p>
+        <p>Varredeira e Limpa-pisos</p>
       </div>
     </Card>
   );

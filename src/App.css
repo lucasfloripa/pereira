@@ -2,12 +2,27 @@
   font-family: Tahoma, Geneva, sans-serif;
 }
 
+.color-light-red {
+  background: #CF212A;
+}
+
+
 #header {
   height: 100vh;
   background: #b3060e;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#produtos {
+  position: relative;
+  min-height: 200px;
+  background: url('/img/img2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   text-align: center;
   color: #fff;
 }
@@ -30,7 +45,7 @@
 }
 .hr-text:before {
   content: "";
-  background: linear-gradient(to right, transparent, #272f38, transparent);
+  background: linear-gradient(to right, transparent, #fff, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -41,10 +56,10 @@
   content: attr(data-content);
   position: relative;
   display: inline-block;
-  color: #272f38;
+  color: #fff;
   padding: 0 0.5em;
   line-height: 1.5em;
-  background-color: #fcfcfa;
+  background-color: #CF212A;
 }
 
 .hr-text-sobre {
@@ -52,14 +67,14 @@
   position: relative;
   outline: 0;
   border: 0;
-  color: white;
+  color: black;
   text-align: center;
   height: 1.5em;
   /* opacity: 0.5; */
 }
 .hr-text-sobre:before {
   content: "";
-  background: linear-gradient(to right, transparent, white, transparent);
+  background: linear-gradient(to right, transparent, black, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -70,10 +85,10 @@
   content: attr(data-content);
   position: relative;
   display: inline-block;
-  color: white;
+  color: black;
   padding: 0 0.5em;
   line-height: 1.5em;
-  background-color: #b3060e;
+  background-color: #fff;
 }
 
 .zoom {
@@ -87,6 +102,7 @@
 .color-red {
   background: #b3060e;
 }
+
 .color-black {
   background: #272f38;
 }
@@ -150,9 +166,6 @@
   }
   #header .col-md-6:first-child {
     margin-bottom: 2em;
-  }
-  #header {
-    height: 90vh;
   }
   #footer {
     padding-top: 1.5rem;

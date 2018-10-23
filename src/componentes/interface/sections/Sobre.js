@@ -2,17 +2,26 @@ import React from "react";
 import { Container } from "mdbreact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
+import SobreWhatsAppIcon from "../sobre_componentes/SobreWhatsAppIcon";
 
 const Sobre = () => {
   return (
-    <section id="sobre" className="pt-5">
-      <Container fluid className="color-red text-center text-white p-5">
+    <section id="sobre" className="color-light-red pt-5">
+      <Container fluid className="text-center text-white p-5">
+        <div
+          id="whatsapp-icon"
+          className="d-none d-md-block"
+          style={{ width: "200%" }}
+        >
+          <Fade buttom>
+            <SobreWhatsAppIcon />
+          </Fade>
+        </div>
         <Fade buttom>
           <h1
-            className="hr-text-sobre mb-resp-sobre font-weight-bold display-4"
+            className="hr-text mb-resp-sobre font-weight-bold display-4"
             data-content="Quem Somos"
           />
-          <p className="lead">Breve resumo sobre os quem somos</p>
         </Fade>
         <Fade buttom>
           <div className="row my-5">

@@ -6,34 +6,34 @@ const FooterInfos1 = () => {
     <React.Fragment>
       <div className="d-flex">
         <div
-          className="d-flex justify-content-center align-self-center p-2"
-          style={{ width: "25%" }}
+          className="d-flex justify-content-center align-self-center"
+          style={{ width: "10%" }}
         >
-          <FontAwesomeIcon icon="building" color="red" size="2x" />
+          <FontAwesomeIcon icon="building" color="red" />
         </div>
-        <div className="align-self-center p-2" style={{ width: "75%" }}>
+        <span className="mr-2" />
+        <div className="align-self-center">
           Pereira Higiene, Limpeza e Descartáveis
         </div>
       </div>
       <div className="d-flex">
-        <div
-          className="d-flex justify-content-center p-2"
-          style={{ width: "25%" }}
-        >
-          <FontAwesomeIcon icon="clock" color="red" size="2x" />
+        <div className="d-flex justify-content-center" style={{ width: "10%" }}>
+          <FontAwesomeIcon icon="clock" color="red" />
         </div>
-        <div className="align-self-center p-2" style={{ width: "75%" }}>
-          Segunda a Sexta: 08:00 - 19:00
+        <span className="mr-2" />
+        <div className="align-self-center">
+          Segunda a Sexta: 08:00 - 12:00 / 13:30 - 18:18
         </div>
       </div>
       <div className="d-flex">
         <div
-          className="d-flex justify-content-center align-self-center p-2"
-          style={{ width: "25%" }}
+          className="d-flex justify-content-center align-self-center"
+          style={{ width: "10%" }}
         >
-          <FontAwesomeIcon icon="map-pin" color="red" size="2x" />
+          <FontAwesomeIcon icon="map-pin" color="red" />
         </div>
-        <div className="align-self-center p-2" style={{ width: "75%" }}>
+        <span className="mr-2" />
+        <div className="align-self-center">
           R. Eliane Mota, 2505 - Ipiranga, São José - SC 88110-840.
         </div>
       </div>

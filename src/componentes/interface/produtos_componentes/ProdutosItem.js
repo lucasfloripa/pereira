@@ -9,10 +9,14 @@ function ProdutosItem(props) {
           <FontAwesomeIcon icon={props.icon} color="red" size="4x" />
         </div>
         <div className="align-self-center p-2">
-          <h3 className="productH3">{props.nome}</h3>
+          <h2 className="productH2 font-weight-bold" style={{ color: "black" }}>
+            {props.nome}
+          </h2>
         </div>
       </div>
-      <p className="lead">{props.descricao}</p>
+      <p className="lead font-weight-bold" style={{ color: "black" }}>
+        {props.descricao}
+      </p>
     </React.Fragment>
   );
 }

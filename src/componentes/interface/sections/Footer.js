@@ -15,18 +15,16 @@ class Footer extends Component {
   render() {
     return (
       <footer id="footer" style={{ backgroundColor: "black" }}>
-        <Container fluid className="text-white pt-5 px-5">
+        <Container fluid className="text-white pt-3 px-5">
           <Fade buttom>
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-6 p-0">
                 <FooterInfos1 />
-              </div>
-              <div className="col-md-4">
                 <FooterInfos2 />
               </div>
-              <div className="col-md-4">PereiraLogo</div>
+              <div className="col-md-6 p-0">PereiraLogo</div>
             </div>
-            <div className="row pb-resp pt-5">
+            <div className="row pb-resp pt-3">
               <p className="p-0 d-block">
                 Copyright &copy;
                 <span id="year" /> PereiraSC

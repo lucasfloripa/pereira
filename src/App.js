@@ -29,7 +29,12 @@ import {
   faUser,
   faComments,
   faClock,
-  faBuilding
+  faBuilding,
+  faBroom,
+  faBath,
+  faWineGlassAlt,
+  faUserShield,
+  faCogs
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -50,7 +55,12 @@ library.add(
   faComments,
   faWhatsapp,
   faClock,
-  faBuilding
+  faBuilding,
+  faBroom,
+  faBath,
+  faWineGlassAlt,
+  faUserShield,
+  faCogs
 );
 
 class App extends Component {
@@ -59,8 +69,8 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Header />
-        <Produtos />
         <Sobre />
+        <Produtos />
         <Contato />
         <Localizacao />
         <Footer />

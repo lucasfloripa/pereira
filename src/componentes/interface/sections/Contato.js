@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 const Contato = () => {
   return (
-    <section id="contato" className="pt-5">
+    <section id="contato" className="color-light-red pt-5">
       <Container className="p-5">
         <Fade buttom>
           <h1
@@ -19,7 +19,7 @@ const Contato = () => {
         </Fade>
         <Fade buttom>
           <div className="row my-5">
-            <div className="col-md-4 mb-resp">
+            <div className="col-md-4 mb-resp text-white">
               <h4>GOSTARIA DE MAIS INFORMAÇÕES? FALE CONOSCO.</h4>
               <hr></hr>
               <p className="lead">Por que você vai adiar a compra de um produto que pode te trazer tantas vantagens agora? A Pereira tem para oferecer o melhores itens de limpeza, higiene e descartáveis do mercado. Com os nossos produtos,você terá todas as ferramentas necessárias para se livrar daquele lixo e sujeira que tanto lhe incomôdam!</p>

@@ -80,15 +80,6 @@ class BarraNav extends Component {
                 </NavItem>
                 <NavItem>
                   <Scrollchor
-                    to="#produtos"
-                    animate={{ offset: 20, duration: 600 }}
-                    className="nav-link"
-                  >
-                    Produtos
-                  </Scrollchor>
-                </NavItem>
-                <NavItem>
-                  <Scrollchor
                     to="#sobre"
                     animate={{ offset: 20, duration: 600 }}
                     className="nav-link"
@@ -96,6 +87,16 @@ class BarraNav extends Component {
                     Sobre
                   </Scrollchor>
                 </NavItem>
+                <NavItem>
+                  <Scrollchor
+                    to="#produtos"
+                    animate={{ offset: 20, duration: 600 }}
+                    className="nav-link"
+                  >
+                    Produtos
+                  </Scrollchor>
+                </NavItem>
+
                 <NavItem>
                   <Scrollchor
                     to="#contato"

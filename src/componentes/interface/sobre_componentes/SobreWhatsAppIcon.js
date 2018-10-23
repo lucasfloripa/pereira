@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-class ContatoWhatsAppIcon extends Component {
+class SobreWhatsAppIcon extends Component {
   render() {
     return (
       <a
@@ -21,4 +21,4 @@ class ContatoWhatsAppIcon extends Component {
   }
 }
 
-export default ContatoWhatsAppIcon;
+export default SobreWhatsAppIcon;

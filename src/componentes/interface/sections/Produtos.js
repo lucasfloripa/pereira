@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Container } from "mdbreact";
 import Fade from "react-reveal/Fade";
 
-import ProdutosWhatsAppIcon from "../produtos_componentes/ProdutosWhatsAppIcon";
 import ProdutosItem from "../produtos_componentes/ProdutosItem";
 import ProdutosFoto from "../produtos_componentes/ProdutosFoto";
 
@@ -14,8 +13,8 @@ class Produtos extends Component {
       });
     }
     if (window.innerWidth < 364) {
-      Array.from(document.querySelectorAll(".productH3")).forEach(h3 => {
-        h3.style.fontSize = "2rem";
+      Array.from(document.querySelectorAll(".productH2")).forEach(h2 => {
+        h2.style.fontSize = "1.8rem";
       });
     }
   }
@@ -23,98 +22,98 @@ class Produtos extends Component {
   render() {
     return (
       <section id="produtos" className="pt-5">
-        <Container className="text-center p-5 ">
-          <div
-            id="whatsapp-icon"
-            className="d-none d-md-block"
-            style={{ width: "200%" }}
-          >
-            <Fade buttom>
-              <ProdutosWhatsAppIcon />
-            </Fade>
-          </div>
+        <Container className="text-center text-white p-5 ">
           <Fade buttom>
             <h1
-              className="hr-text mb-resp font-weight-bold display-4"
-              data-content="Nossos Produtos"
-            />
-            <p className="lead">Breve resumo sobre os produtos</p>
+              className="display-4 font-weight-bold mb-5"
+              style={{ color: "black" }}
+            >
+              Produtos
+            </h1>
+            {/* <p className="lead font-weight-bold" style={{ color: "black" }}>
+              Breve resumo sobre os produtos
+            </p> */}
           </Fade>
           <Fade buttom>
-            <div className="row my-5">
+            <div className="row">
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
                   icon="car"
-                  nome="Nome Produto"
+                  nome="Automotivo"
                   descricao="Descrição Produto"
                 />
               </div>
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
+                  icon="bath"
+                  nome="Higiene"
                   descricao="Descrição Produto"
                 />
               </div>
               <div className="col-md-4 zoomCol">
-                <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
-                  descricao="Descrição Produto"
-                />
+                <div className="d-flex justify-content-center">
+                  <div className="p-2">
+                    <i
+                      className="fas fa-toilet-paper fa-4x"
+                      style={{ color: "red" }}
+                    />
+                  </div>
+                  <div className="align-self-center p-2">
+                    <h2
+                      className="productH2 font-weight-bold"
+                      style={{ color: "black" }}
+                    >
+                      Descartáveis
+                    </h2>
+                  </div>
+                </div>
+                <p className="lead font-weight-bold" style={{ color: "black" }}>
+                  Descrição
+                </p>
               </div>
             </div>
           </Fade>
           <Fade buttom>
+            <div className="row">
+              <div className="col-md-4 zoomCol">
+                <ProdutosItem
+                  icon="broom"
+                  nome="Limpeza"
+                  descricao="Descrição Produto"
+                />
+              </div>
+              <div className="col-md-4 zoomCol">
+                <ProdutosItem
+                  icon="wine-glass-alt"
+                  nome="Copo e Cozinha "
+                  descricao="Descrição Produto"
+                />
+              </div>
+              <div className="col-md-4 zoomCol">
+                <ProdutosItem
+                  icon="user-shield"
+                  nome="EPI"
+                  descricao="Descrição Produto"
+                />
+              </div>
+            </div>
             <div className="row mb-5">
-              <div className="col-md-4 zoomCol">
+              <div className="col-md-8 zoomCol">
                 <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
-                  descricao="Descrição Produto"
-                />
-              </div>
-              <div className="col-md-4 zoomCol">
-                <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
-                  descricao="Descrição Produto"
-                />
-              </div>
-              <div className="col-md-4 zoomCol">
-                <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
-                  descricao="Descrição Produto"
+                  icon="cogs"
+                  nome="Aluguel de Equipamentos"
+                  descricao="Varredeiras e Limpa-pisos"
                 />
               </div>
             </div>
           </Fade>
-          <Fade buttom>
-            <div className="row mb-5">
-              <div className="col-md-4 zoomCol">
-                <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
-                  descricao="Descrição Produto"
-                />
-              </div>
-              <div className="col-md-4 zoomCol">
-                <ProdutosItem
-                  icon="car"
-                  nome="Nome Produto"
-                  descricao="Descrição Produto"
-                />
-              </div>
-            </div>
-          </Fade>
-          <Fade butoom>
+          {/* <Fade butoom>
             <div className="row">
               <div className="col-md-10 mx-auto">
                 <ProdutosFoto />
               </div>
             </div>
-          </Fade>
+          </Fade> */}
         </Container>
       </section>
     );
