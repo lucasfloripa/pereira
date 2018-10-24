@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "mdbreact";
+import { Container, Card } from "mdbreact";
 import Fade from "react-reveal/Fade";
 
 import ProdutosItem from "../produtos_componentes/ProdutosItem";
@@ -26,7 +26,7 @@ class Produtos extends Component {
           <Fade buttom>
             <h1
               className="display-4 font-weight-bold mb-5"
-              style={{ color: "black" }}
+              style={{ color: "black", textDecoration: 'underline' }}
             >
               Produtos
             </h1>
@@ -35,7 +35,7 @@ class Produtos extends Component {
             </p> */}
           </Fade>
           <Fade buttom>
-            <div className="row">
+            <div className="row mb-3">
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
                   icon="car"
@@ -51,30 +51,27 @@ class Produtos extends Component {
                 />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="d-flex justify-content-center">
-                  <div className="p-2">
-                    <i
-                      className="fas fa-toilet-paper fa-4x"
-                      style={{ color: "red" }}
-                    />
+                <div className="border border-dark rounded" style={{backgroundColor: 'rgba(255,255,255, 0.2)', color: 'black'}}>
+                  <div className="d-flex justify-content-center">
+                    <div className="p-2">
+                      <i
+                        className="fas fa-toilet-paper fa-4x"
+                        style={{ color: "red" }}
+                      />
+                    </div>
+                    <div className="align-self-center p-2">
+                      <h2 className="productH2 font-weight-bold">
+                        Descartáveis
+                      </h2>
+                    </div>
                   </div>
-                  <div className="align-self-center p-2">
-                    <h2
-                      className="productH2 font-weight-bold"
-                      style={{ color: "black" }}
-                    >
-                      Descartáveis
-                    </h2>
-                  </div>
+                  <p className="lead font-weight-bold">Descrição</p>
                 </div>
-                <p className="lead font-weight-bold" style={{ color: "black" }}>
-                  Descrição
-                </p>
               </div>
             </div>
           </Fade>
           <Fade buttom>
-            <div className="row">
+            <div className="row mb-3">
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
                   icon="broom"
