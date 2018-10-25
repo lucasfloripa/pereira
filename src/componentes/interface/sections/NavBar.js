@@ -60,7 +60,7 @@ class BarraNav extends Component {
           dark
           scrolling
         >
-          <Container className="p-1">
+          <Container className="p-2">
             <NavbarBrand href="https://lucasfloripa.github.io/pereira/">
               PereiraLogo
             </NavbarBrand>

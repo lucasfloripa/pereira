@@ -26,16 +26,15 @@ class Produtos extends Component {
           <Fade buttom>
             <h1
               className="display-4 font-weight-bold mb-5"
-              style={{ color: "black", textDecoration: 'underline' }}
             >
               Produtos
             </h1>
-            {/* <p className="lead font-weight-bold" style={{ color: "black" }}>
+            {/* <p className="lead font-weight-bold">
               Breve resumo sobre os produtos
             </p> */}
           </Fade>
           <Fade buttom>
-            <div className="row mb-3">
+            <div className="row mb-1">
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
                   icon="car"
@@ -45,13 +44,20 @@ class Produtos extends Component {
               </div>
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
-                  icon="bath"
-                  nome="Higiene"
+                  icon="utensils"
+                  nome="Descartáveis"
                   descricao="Descrição Produto"
                 />
               </div>
               <div className="col-md-4 zoomCol">
-                <div className="border border-dark rounded" style={{backgroundColor: 'rgba(255,255,255, 0.2)', color: 'black'}}>
+                <div
+                  className="d-flex flex-column justify-content-center rounded-circle"
+                  style={{
+                    color: "black",
+                    height: "250px",
+                    background: "rgba(255,255,255, 0.05)"
+                  }}
+                >
                   <div className="d-flex justify-content-center">
                     <div className="p-2">
                       <i
@@ -60,9 +66,7 @@ class Produtos extends Component {
                       />
                     </div>
                     <div className="align-self-center p-2">
-                      <h2 className="productH2 font-weight-bold">
-                        Descartáveis
-                      </h2>
+                      <h2 className="productH2 font-weight-bold">Higiene</h2>
                     </div>
                   </div>
                   <p className="lead font-weight-bold">Descrição</p>
@@ -71,7 +75,7 @@ class Produtos extends Component {
             </div>
           </Fade>
           <Fade buttom>
-            <div className="row mb-3">
+            <div className="row mb-1">
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
                   icon="broom"
@@ -82,7 +86,7 @@ class Produtos extends Component {
               <div className="col-md-4 zoomCol">
                 <ProdutosItem
                   icon="wine-glass-alt"
-                  nome="Copo e Cozinha "
+                  nome="Copa e Cozinha "
                   descricao="Descrição Produto"
                 />
               </div>

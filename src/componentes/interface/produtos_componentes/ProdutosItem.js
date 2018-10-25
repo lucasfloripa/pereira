@@ -5,8 +5,12 @@ import { Card } from "mdbreact";
 function ProdutosItem(props) {
   return (
     <div
-      className="border border-dark rounded"
-      style={{ backgroundColor: "rgba(255,255,255, 0.2)", color: 'black' }}
+      style={{
+        color: "black",
+        height: "250px",
+        background: "rgba(255,255,255, 0.05)"
+      }}
+      className="d-flex flex-column justify-content-center rounded-circle"
     >
       <div className="d-flex justify-content-center">
         <div className="p-2">

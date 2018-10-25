@@ -34,7 +34,8 @@ import {
   faBath,
   faWineGlassAlt,
   faUserShield,
-  faCogs
+  faCogs,
+  faUtensils
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -60,7 +61,8 @@ library.add(
   faBath,
   faWineGlassAlt,
   faUserShield,
-  faCogs
+  faCogs,
+  faUtensils
 );
 
 class App extends Component {

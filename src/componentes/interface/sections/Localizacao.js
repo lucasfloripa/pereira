@@ -16,11 +16,11 @@ export default function Localizacao() {
           <p className="lead mb-5">CEP: 88110-840.</p>
         </Fade>
         <Fade buttom>
-          {/* <div className="row">
+          <div className="row m-0" style={{width: '100%'}}>
             <div className="col p-0">
               <LocalizacaoGoogleMap />
             </div>
-          </div> */}
+          </div>
         </Fade>
       </Container>
     </section>
