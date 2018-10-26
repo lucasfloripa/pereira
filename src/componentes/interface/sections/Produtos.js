@@ -3,7 +3,6 @@ import { Container, Card } from "mdbreact";
 import Fade from "react-reveal/Fade";
 
 import ProdutosItem from "../produtos_componentes/ProdutosItem";
-import ProdutosFoto from "../produtos_componentes/ProdutosFoto";
 
 class Produtos extends Component {
   componentDidMount() {
@@ -24,38 +23,30 @@ class Produtos extends Component {
       <section id="produtos" className="pt-5">
         <Container className="text-center text-white p-5 ">
           <Fade buttom>
-            <h1
-              className="display-4 font-weight-bold mb-5"
-            >
-              Produtos
-            </h1>
-            {/* <p className="lead font-weight-bold">
-              Breve resumo sobre os produtos
-            </p> */}
+            <h1 className="display-4 font-weight-bold mb-5">Produtos</h1>
           </Fade>
           <Fade buttom>
-            <div className="row mb-1">
-              <div className="col-md-4 zoomCol">
+            <div className="row">
+              <div className="col-lg-4 col-md-6 mb-resp zoomCol">
                 <ProdutosItem
                   icon="car"
                   nome="Automotivo"
                   descricao="Descrição Produto"
                 />
               </div>
-              <div className="col-md-4 zoomCol">
+              <div className="col-lg-4 col-md-6 mb-resp zoomCol">
                 <ProdutosItem
                   icon="utensils"
                   nome="Descartáveis"
                   descricao="Descrição Produto"
                 />
               </div>
-              <div className="col-md-4 zoomCol">
+              <div className="col-lg-4 col-md-6 mb-resp zoomCol">
                 <div
-                  className="d-flex flex-column justify-content-center rounded-circle"
+                  className="d-flex flex-column justify-content-center rounded-circle produtos-background"
                   style={{
                     color: "black",
-                    height: "250px",
-                    background: "rgba(255,255,255, 0.05)"
+                    height: "250px"
                   }}
                 >
                   <div className="d-flex justify-content-center">
@@ -72,25 +63,21 @@ class Produtos extends Component {
                   <p className="lead font-weight-bold">Descrição</p>
                 </div>
               </div>
-            </div>
-          </Fade>
-          <Fade buttom>
-            <div className="row mb-1">
-              <div className="col-md-4 zoomCol">
+              <div className="col-lg-4 col-md-6 mb-resp zoomCol">
                 <ProdutosItem
                   icon="broom"
                   nome="Limpeza"
                   descricao="Descrição Produto"
                 />
               </div>
-              <div className="col-md-4 zoomCol">
+              <div className="col-lg-4 col-md-6 mb-resp zoomCol">
                 <ProdutosItem
                   icon="wine-glass-alt"
                   nome="Copa e Cozinha "
                   descricao="Descrição Produto"
                 />
               </div>
-              <div className="col-md-4 zoomCol">
+              <div className="col-lg-4 col-md-6 mb-resp zoomCol">
                 <ProdutosItem
                   icon="user-shield"
                   nome="EPI"
@@ -98,7 +85,7 @@ class Produtos extends Component {
                 />
               </div>
             </div>
-            <div className="row mb-5">
+            <div className="row">
               <div className="col-md-8 zoomCol">
                 <ProdutosItem
                   icon="cogs"
@@ -108,13 +95,6 @@ class Produtos extends Component {
               </div>
             </div>
           </Fade>
-          {/* <Fade butoom>
-            <div className="row">
-              <div className="col-md-10 mx-auto">
-                <ProdutosFoto />
-              </div>
-            </div>
-          </Fade> */}
         </Container>
       </section>
     );

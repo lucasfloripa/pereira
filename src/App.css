@@ -21,7 +21,7 @@
   min-height: 200px;
   background: url("../src/imgs/img2.jpg");
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   text-align: center;
   color: #fff;
 }
@@ -110,6 +110,11 @@
   font-size: 0.75rem;
 }
 
+.produtos-background {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
 /* WhatsApp Icon */
 .icon-float {
   position: fixed;
@@ -124,6 +129,7 @@
   text-align: center;
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
+  z-index: 999;
 }
 .my-icon-float {
   margin-top: 16px;

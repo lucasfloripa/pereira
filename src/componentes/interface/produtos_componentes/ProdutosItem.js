@@ -7,10 +7,9 @@ function ProdutosItem(props) {
     <div
       style={{
         color: "black",
-        height: "250px",
-        background: "rgba(255,255,255, 0.05)"
+        height: "250px"
       }}
-      className="d-flex flex-column justify-content-center rounded-circle"
+      className="d-flex flex-column justify-content-center rounded-circle produtos-background"
     >
       <div className="d-flex justify-content-center">
         <div className="p-2">

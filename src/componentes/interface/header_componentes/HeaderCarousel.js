@@ -7,7 +7,7 @@ import {
   Animation
 } from "mdbreact";
 
-import carouselImage1 from "../../../imgs/entregacor.png";
+import carouselImage1 from "../../../imgs/entregacor2.png";
 import carouselImage2 from "../../../imgs/elfen.png";
 import carouselImage3 from "../../../imgs/orgaos.png";
 

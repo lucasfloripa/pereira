@@ -5,7 +5,7 @@ import LocalizacaoGoogleMap from "../localizacao_componentes/LocalizacaoGoogleMa
 
 export default function Localizacao() {
   return (
-    <section id="localizacao" className="pt-5">
+    <section id="localizacao" className="pt-5" style={{ zIndex: "-1" }}>
       <Container className="text-center pt-5 px-0" fluid>
         <Fade buttom>
           <h1
@@ -16,7 +16,7 @@ export default function Localizacao() {
           <p className="lead mb-5">CEP: 88110-840.</p>
         </Fade>
         <Fade buttom>
-          <div className="row m-0" style={{width: '100%'}}>
+          <div className="row m-0" style={{ width: "100%" }}>
             <div className="col p-0">
               <LocalizacaoGoogleMap />
             </div>

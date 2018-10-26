@@ -30,6 +30,11 @@ class BarraNav extends Component {
       return;
     }
 
+    window.onload = () => {
+      iconFloat.style.background = "transparent";
+      iconFloat.style.boxShadow = "none";
+    };
+
     window.onscroll = () => {
       if (window.pageYOffset > 50) {
         nav.style.background = "#272F38";
