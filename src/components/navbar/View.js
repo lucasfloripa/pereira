@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-
+import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Scrollchor from 'react-scrollchor';
 import {
   Navbar,
   NavbarBrand,
@@ -8,42 +9,39 @@ import {
   Collapse,
   NavItem,
   Container
-} from "mdbreact";
+} from 'mdbreact';
 
-import Scrollchor from "react-scrollchor";
-import NavbarIcones from "../navbar_componentes/NavbarIcones";
+import Icones from './Icones';
 
-import { BrowserRouter as Router } from "react-router-dom";
-
-class BarraNav extends Component {
+class NavBar extends Component {
   state = {
     collapse: false,
     isWideEnoght: false
   };
 
   componentDidMount() {
-    const nav = document.querySelector(".navbar");
-    const iconFloat = document.querySelector(".icon-float");
+    const nav = document.querySelector('.navbar');
+    const iconFloat = document.querySelector('.icon-float');
 
     if (window.innerWidth < 768) {
-      nav.style.background = "#272F38";
+      nav.style.background = '#272F38';
       return;
     }
 
     window.onload = () => {
-      iconFloat.style.background = "transparent";
-      iconFloat.style.boxShadow = "none";
+      iconFloat.style.background = 'transparent';
+      iconFloat.style.boxShadow = 'none';
     };
 
     window.onscroll = () => {
       if (window.pageYOffset > 50) {
-        nav.style.background = "#272F38";
-        iconFloat.style.background = "#25d366";
-        iconFloat.style.boxShadow = "2px 2px 3px #999";
+        nav.style.background = '#272F38';
+        iconFloat.style.background = '#25d366';
+        iconFloat.style.boxShadow = '2px 2px 3px #999';
       } else {
-        nav.style.background = "transparent";
-        iconFloat.style.background = "transparent";
-        iconFloat.style.boxShadow = "none";
+        nav.style.background = 'transparent';
+        iconFloat.style.background = 'transparent';
+        iconFloat.style.boxShadow = 'none';
       }
     };
   }
@@ -132,7 +130,7 @@ class BarraNav extends Component {
               </NavbarNav>
             </Collapse>
             <div className="d-none d-md-block">
-              <NavbarIcones />
+              <Icones />
             </div>
           </Container>
         </Navbar>
@@ -141,4 +139,4 @@ class BarraNav extends Component {
   }
 }
 
-export default BarraNav;
+export default NavBar;

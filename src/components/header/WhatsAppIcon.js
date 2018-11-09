@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-class SobreWhatsAppIcon extends Component {
+class WhatsAppIcon extends Component {
   render() {
     return (
       <a
@@ -12,7 +11,7 @@ class SobreWhatsAppIcon extends Component {
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon
-          icon={["fab", "whatsapp"]}
+          icon={['fab', 'whatsapp']}
           color="white"
           className="my-icon-float"
         />
@@ -21,4 +20,4 @@ class SobreWhatsAppIcon extends Component {
   }
 }
 
-export default SobreWhatsAppIcon;
+export default WhatsAppIcon;

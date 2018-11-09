@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
-import {
-  Carousel,
-  CarouselInner,
-  CarouselItem,
-  View,
-  Animation
-} from 'mdbreact';
+import { Carousel, CarouselInner, CarouselItem, View } from 'mdbreact';
 
-import carouselImage1 from '../../../imgs/entregacor2.png';
-import carouselImage2 from '../../../imgs/elfen.png';
-import carouselImage3 from '../../../imgs/orgaos.png';
+import carouselImage1 from '../../imgs/entregacor2.png';
+import carouselImage2 from '../../imgs/elfen.png';
+import carouselImage3 from '../../imgs/orgaos.png';
 
 class HeaderCarousel extends Component {
   render() {

@@ -1,11 +1,9 @@
 import React from 'react';
-
 import { Container } from 'mdbreact';
-
-import ContatoFormEnviarEmail from '../contato_componentes/ContatoFormEnviarEmail';
-import ContatoFooterResp from '../contato_componentes/ContatoFooterResp';
-
 import Fade from 'react-reveal/Fade';
+
+import Form from './Form';
+import FooterResp from './FooterResp';
 
 const Contato = () => {
   return (
@@ -22,7 +20,7 @@ const Contato = () => {
             <h4 className="mb-4 text-white">
               GOSTARIA DE MAIS INFORMAÇÕES? FALE CONOSCO.
             </h4>
-            <ContatoFormEnviarEmail />
+            <Form />
           </div>
         </Fade>
       </Container>
@@ -30,7 +28,7 @@ const Contato = () => {
         className="d-block d-md-none color-black fixed-bottom p-2"
         fluid
       >
-        <ContatoFooterResp />
+        <FooterResp />
       </Container>
     </section>
   );

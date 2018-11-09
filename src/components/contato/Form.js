@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardBody, CardTitle, Input, Button } from 'mdbreact';
 import axios from 'axios';
 
-class FormEnviarEmail extends Component {
+class Form extends Component {
   state = {
     name: '',
     email: '',
@@ -60,4 +60,4 @@ class FormEnviarEmail extends Component {
   }
 }
 
-export default FormEnviarEmail;
+export default Form;

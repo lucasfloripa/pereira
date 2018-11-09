@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Container } from 'mdbreact';
 import Fade from 'react-reveal/Fade';
+import { Container } from 'mdbreact';
 
-import ProdutosItem from '../produtos_componentes/ProdutosItem';
+import Item from './Item';
 
 class Produtos extends Component {
   componentDidMount() {
@@ -30,7 +30,7 @@ class Produtos extends Component {
           <Fade buttom>
             <div className="row">
               <div className="col-md-6 mb-resp zoomCol">
-                <ProdutosItem
+                <Item
                   icon="utensils"
                   nome="Descartáveis"
                   descricao="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates magnam perferendis? Perspiciatis eius provident recusandae assumenda harum minima ipsa veritatis eaque quisquam. Totam iure officiis, et quas commodi a."
@@ -40,7 +40,7 @@ class Produtos extends Component {
                 />
               </div>
               <div className="col-md-6 mb-resp zoomCol">
-                <ProdutosItem
+                <Item
                   icon="wine-glass-alt"
                   nome="Copa e Cozinha"
                   descricao="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates magnam perferendis? Perspiciatis eius provident recusandae assumenda harum minima ipsa veritatis eaque quisquam. Totam iure officiis, et quas commodi a."
@@ -50,7 +50,7 @@ class Produtos extends Component {
                 />
               </div>
               <div className="col-md-8 mb-resp zoomCol">
-                <ProdutosItem
+                <Item
                   icon="broom"
                   nome="Higiene e Limpeza"
                   descricao="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates magnam perferendis? Perspiciatis eius provident recusandae assumenda harum minima ipsa veritatis eaque quisquam. Totam iure officiis, et quas commodi a."
@@ -62,7 +62,7 @@ class Produtos extends Component {
             </div>
             <div className="row">
               <div className="col-md-6 mb-resp zoomCol">
-                <ProdutosItem
+                <Item
                   icon="user-shield"
                   nome="EPI"
                   descricao="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates magnam perferendis? Perspiciatis eius provident recusandae assumenda harum minima ipsa veritatis eaque quisquam. Totam iure officiis, et quas commodi a."
@@ -72,7 +72,7 @@ class Produtos extends Component {
                 />
               </div>
               <div className="col-md-6 mb-resp zoomCol">
-                <ProdutosItem
+                <Item
                   icon="car"
                   nome="Automotivo"
                   descricao="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates magnam perferendis? Perspiciatis eius provident recusandae assumenda harum minima ipsa veritatis eaque quisquam. Totam iure officiis, et quas commodi a."
@@ -82,7 +82,7 @@ class Produtos extends Component {
                 />
               </div>
               <div className="col-md-8 mb-resp zoomCol">
-                <ProdutosItem
+                <Item
                   icon="cogs"
                   nome="Aluguel de Equipamentos"
                   descricao="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates magnam perferendis? Perspiciatis eius provident recusandae assumenda harum minima ipsa veritatis eaque quisquam. Totam iure officiis, et quas commodi a."

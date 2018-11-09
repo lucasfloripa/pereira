@@ -1,13 +1,13 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function NavbarIcones() {
+function Icones() {
   return (
     <React.Fragment>
       <div className="d-flex">
         <div className="align-self-end d-none d-lg-block">
           <FontAwesomeIcon icon="phone" color="white" size="1x" />
-          <span className="mr-1"></span>
+          <span className="mr-1" />
           (48) 3246-9892
         </div>
         <span className="mr-3" />
@@ -16,7 +16,7 @@ function NavbarIcones() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={["fab", "facebook"]} color="white" size="2x" />
+          <FontAwesomeIcon icon={['fab', 'facebook']} color="white" size="2x" />
         </a>
         <span className="mr-3" />
         <a
@@ -25,7 +25,7 @@ function NavbarIcones() {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon
-            icon={["fab", "instagram"]}
+            icon={['fab', 'instagram']}
             color="white"
             size="2x"
           />
@@ -35,4 +35,4 @@ function NavbarIcones() {
   );
 }
 
-export default NavbarIcones;
+export default Icones;

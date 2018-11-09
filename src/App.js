@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 //Interface Componentes
-import NavBar from './componentes/interface/sections/NavBar';
-import Header from './componentes/interface/sections/Header';
-import Produtos from './componentes/interface/sections/Produtos';
-import Sobre from './componentes/interface/sections/Sobre';
-import Contato from './componentes/interface/sections/Contato';
-import Localizacao from './componentes/interface/sections/Localizacao';
-import Footer from './componentes/interface/sections/Footer';
+import NavBar from './components/navbar/View';
+import Header from './components/header/View';
+import Sobre from './components/sobre/View';
+import Produtos from './components/produtos/View';
+import Contato from './components/contato/View';
+import Localizacao from './components/localizacao/View';
+import Footer from './components/footer/View';
 
 //CSS
 import './App.css';

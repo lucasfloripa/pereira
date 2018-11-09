@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Animation } from 'mdbreact';
-import HeaderCarousel from '../header_componentes/HeaderCarousel';
-import Logo from '../../../imgs/logosite.png';
-import HeaderWhatsAppIcon from '../header_componentes/HeaderWhatsAppIcon';
+
+import Logo from '../../imgs/logosite.png';
+import WhatsAppIcon from './WhatsAppIcon';
+import Carousel from './Carousel';
 
 class Header extends Component {
   render() {
@@ -16,7 +17,7 @@ class Header extends Component {
           </div>
           <div className="col-md-6 d-none d-md-block">
             <Animation type="zoomIn">
-              <HeaderCarousel />
+              <Carousel />
             </Animation>
           </div>
           <div
@@ -24,7 +25,7 @@ class Header extends Component {
             className="d-none d-md-block"
             style={{ width: '200%', zIndex: '123' }}
           >
-            <HeaderWhatsAppIcon />
+            <WhatsAppIcon />
           </div>
         </Container>
       </section>

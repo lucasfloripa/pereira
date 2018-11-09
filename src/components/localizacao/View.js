@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container } from 'mdbreact';
 import Fade from 'react-reveal/Fade';
-import SimpleMap from '../localizacao_componentes/GoogleReactMap';
+
+// import GoogleReactMap from './GoogleReactMap';
 
 class Localizacao extends Component {
   state = {
@@ -29,7 +30,7 @@ class Localizacao extends Component {
         <Container className="text-center pt-5 px-0" fluid>
           <Fade buttom>
             <h1
-              className="hr-text-sobre font-weight-bold display-4"
+              className="hr-text-loc font-weight-bold display-4"
               data-content="Endereço"
             />
             <p className="lead">
@@ -39,9 +40,7 @@ class Localizacao extends Component {
           </Fade>
           <Fade buttom>
             <div className="row m-0" style={{ width: '100%' }}>
-              <div className="col p-0">
-                <SimpleMap />
-              </div>
+              <div className="col p-0">{/* <GoogleReactMap /> */}</div>
             </div>
           </Fade>
         </Container>

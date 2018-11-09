@@ -13,7 +13,7 @@ const Sobre = () => {
       <Container fluid className="text-center text-white p-5">
         <Fade buttom>
           <h1
-            className="hr-text mb-resp-sobre font-weight-bold display-4"
+            className="hr-text mb-resp font-weight-bold display-4"
             data-content="Quem Somos"
           />
         </Fade>
