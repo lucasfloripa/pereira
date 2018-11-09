@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { Card, CardBody, CardTitle, Input, Button } from "mdbreact";
-import axios from "axios";
+import React, { Component } from 'react';
+import { Card, CardBody, CardTitle, Input, Button } from 'mdbreact';
+import axios from 'axios';
 
 class FormEnviarEmail extends Component {
   state = {
-    name: "",
-    email: "",
-    phone: "",
-    message: ""
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
   };
 
   onSubmit = async e => {
@@ -18,7 +18,7 @@ class FormEnviarEmail extends Component {
 
   render() {
     return (
-      <Card>
+      <Card className="w-100">
         <CardBody>
           <form>
             <CardTitle>Entre em Contato!</CardTitle>

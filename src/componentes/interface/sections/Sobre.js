@@ -1,14 +1,14 @@
-import React from "react";
-import { Container } from "mdbreact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import { Container } from 'mdbreact';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Fade from 'react-reveal/Fade';
 
 const Sobre = () => {
   return (
     <section
       id="sobre"
       className="color-light-red pt-5"
-      style={{ zIndex: "999" }}
+      style={{ zIndex: '999' }}
     >
       <Container fluid className="text-center text-white p-5">
         <Fade buttom>
@@ -23,13 +23,13 @@ const Sobre = () => {
               <h2>Nossa História</h2>
               <p className="lead">
                 A Pereira Descartáveis é uma empresa que fornece soluções em
-                produtos de higiene e descartáveis. Atuando no mercado há mais
-                de 11 anos, tem se posicionado fortemente, tornando-se
-                referência em sua região. Possui profissionais capacitados e
-                treinados no atendimento e suprimento de diversos tipos de
-                produtos e equipamentos para higiene, limpeza e descartáveis.
-                Produtos como Papéis Toalha, Sabonetes, Odorizadores,
-                Dispensers, Lixeiras e uma infinidade de outros produtos.{" "}
+                produtos de higiene e descartáveis. Atuando no mercado desde
+                2005, tem se posicionado fortemente, tornando-se referência em
+                sua região. Possui profissionais capacitados e treinados no
+                atendimento e suprimento de diversos tipos de produtos e
+                equipamentos para higiene, limpeza e descartáveis. Produtos como
+                Papéis Toalha, Sabonetes, Odorizadores, Dispensers, Lixeiras e
+                uma infinidade de outros produtos.{' '}
               </p>
             </div>
           </div>

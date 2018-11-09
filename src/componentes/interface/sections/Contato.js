@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import { Container } from "mdbreact";
+import { Container } from 'mdbreact';
 
-import ContatoFormEnviarEmail from "../contato_componentes/ContatoFormEnviarEmail";
-import ContatoFooterResp from "../contato_componentes/ContatoFooterResp";
+import ContatoFormEnviarEmail from '../contato_componentes/ContatoFormEnviarEmail';
+import ContatoFooterResp from '../contato_componentes/ContatoFooterResp';
 
-import Fade from "react-reveal/Fade";
+import Fade from 'react-reveal/Fade';
 
 const Contato = () => {
   return (
@@ -18,15 +18,11 @@ const Contato = () => {
           />
         </Fade>
         <Fade buttom>
-          <div className="row my-5">
-            <div className="col-md-4 mb-resp text-white">
-              <h4>GOSTARIA DE MAIS INFORMAÇÕES? FALE CONOSCO.</h4>
-              <hr></hr>
-              <p className="lead">Por que você vai adiar a compra de um produto que pode te trazer tantas vantagens agora? A Pereira tem para oferecer o melhores itens de limpeza, higiene e descartáveis do mercado. Com os nossos produtos,você terá todas as ferramentas necessárias para se livrar daquele lixo e sujeira que tanto lhe incomôdam!</p>
-            </div>
-            <div className="col-md-8">
-              <ContatoFormEnviarEmail />
-            </div>
+          <div className="row d-flex flex-column align-items-center my-5">
+            <h4 className="mb-4 text-white">
+              GOSTARIA DE MAIS INFORMAÇÕES? FALE CONOSCO.
+            </h4>
+            <ContatoFormEnviarEmail />
           </div>
         </Fade>
       </Container>
