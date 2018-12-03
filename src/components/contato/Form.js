@@ -1,17 +1,26 @@
-import React, { Component } from 'react';
-import { Card, CardBody, CardTitle, Input, Button } from 'mdbreact';
-import axios from 'axios';
+import React, { Component } from "react";
+import { Card, CardBody, CardTitle, Input, Button } from "mdbreact";
+import axios from "axios";
 
 class Form extends Component {
   state = {
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
   };
 
   onSubmit = async e => {
     e.preventDefault();
+
+    const { name, email, phone, message } = this.state;
+
+    // const form = await axios.post("/api/form", {
+    //   name,
+    //   email,
+    //   phone,
+    //   message
+    // });
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });

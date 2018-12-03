@@ -1,5 +1,5 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Informations = () => {
   return (
@@ -7,7 +7,7 @@ const Informations = () => {
       <div className="d-flex">
         <div
           className="d-flex justify-content-center align-self-center"
-          style={{ width: '10%' }}
+          style={{ width: "10%" }}
         >
           <FontAwesomeIcon icon="building" color="red" />
         </div>
@@ -17,7 +17,7 @@ const Informations = () => {
         </div>
       </div>
       <div className="d-flex">
-        <div className="d-flex justify-content-center" style={{ width: '10%' }}>
+        <div className="d-flex justify-content-center" style={{ width: "10%" }}>
           <FontAwesomeIcon icon="clock" color="red" />
         </div>
         <span className="mr-2" />
@@ -28,7 +28,7 @@ const Informations = () => {
       <div className="d-flex">
         <div
           className="d-flex justify-content-center align-self-center"
-          style={{ width: '10%' }}
+          style={{ width: "10%" }}
         >
           <FontAwesomeIcon icon="map-pin" color="red" />
         </div>
@@ -40,7 +40,7 @@ const Informations = () => {
       <div className="d-flex">
         <div
           className="d-flex justify-content-center align-self-center"
-          style={{ width: '10%' }}
+          style={{ width: "10%" }}
         >
           <FontAwesomeIcon icon="phone" color="red" />
         </div>
@@ -50,17 +50,17 @@ const Informations = () => {
       <div className="d-flex">
         <div
           className="d-flex justify-content-center align-self-center"
-          style={{ width: '10%' }}
+          style={{ width: "10%" }}
         >
-          <FontAwesomeIcon icon={['fab', 'whatsapp']} color="red" />
+          <FontAwesomeIcon icon={["fab", "whatsapp"]} color="red" />
         </div>
         <span className="mr-2" />
-        <div className="align-self-center">(48) 99947-0129</div>
+        <div className="align-self-center">(48) 99926-9256</div>
       </div>
       <div className="d-flex">
         <div
           className="d-flex justify-content-center align-self-center"
-          style={{ width: '10%' }}
+          style={{ width: "10%" }}
         >
           <FontAwesomeIcon icon="envelope" color="red" />
         </div>
