@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Modal, ModalBody, ModalHeader, ModalFooter } from "mdbreact";
-import PropTypes from "prop-types";
-import classnames from "classnames";
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'mdbreact';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 class ProdutosItem extends Component {
   state = {
@@ -21,11 +21,11 @@ class ProdutosItem extends Component {
     return (
       <div
         style={{
-          color: "black",
-          height: "250px"
+          color: 'black',
+          height: '250px'
         }}
-        className={classnames("d-flex flex-column justify-content-center", {
-          "rounded-circle produtos-background": window.innerWidth >= 768
+        className={classnames('d-flex flex-column justify-content-center', {
+          'rounded-circle produtos-background': window.innerWidth >= 768
         })}
       >
         <div className="d-flex justify-content-center">
@@ -40,7 +40,7 @@ class ProdutosItem extends Component {
           outline
           className="mx-auto rounded-circle"
           color="warning"
-          style={{ width: "50%" }}
+          style={{ width: '50%' }}
           onClick={this.toggle}
         >
           <span className="d-lg-block d-none text-warning font-weight-bold lead">
