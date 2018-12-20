@@ -39,8 +39,6 @@ class Localizacao extends Component {
           <Fade buttom>
             <div className="row m-0" style={{ width: '100%' }}>
               <div className="col p-0">
-                {/* <GoogleReactMap /> */}
-
                 <div style={{ width: '100%' }}>
                   <iframe
                     style={{ width: '100%', height: '650px' }}
