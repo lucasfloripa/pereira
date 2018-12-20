@@ -16,13 +16,9 @@
 
 #produtos {
   position: relative;
-  min-height: 200px;
-  background: url("../src/imgs/img2.jpg");
+  background: url('../src/imgs/produtoBack.jpg');
   background-color: #cf212a;
-  background-attachment: fixed;
-  background-repeat: repeat-y;
   background-position: center;
-  color: #fff;
 }
 
 #footer p {
@@ -40,7 +36,7 @@
 }
 
 .hr-text:before {
-  content: "";
+  content: '';
   background: linear-gradient(to right, transparent, #fff, transparent);
   position: absolute;
   left: 0;
@@ -69,7 +65,7 @@
 }
 
 .hr-text-loc:before {
-  content: "";
+  content: '';
   background: linear-gradient(to right, transparent, black, transparent);
   position: absolute;
   left: 0;
@@ -103,7 +99,7 @@
 }
 
 .zoom:hover button {
-  background-color: #cf212a !important;
+  background-color: #eff3bb !important;
   box-shadow: 0 0 50px #ff0;
 }
 
@@ -163,7 +159,7 @@
     margin-bottom: 1.5em;
   }
   #produtos button {
-    background-color: #cf212a !important;
+    background-color: #eff3bb !important;
     box-shadow: 0 0 50px #ff0;
   }
 }

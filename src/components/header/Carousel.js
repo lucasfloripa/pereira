@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { Carousel, CarouselInner, CarouselItem, View } from "mdbreact";
+import React, { Component } from 'react';
+import { Carousel, CarouselInner, CarouselItem, View } from 'mdbreact';
 
-import carouselImage1 from "../../imgs/entrega.png";
-import carouselImage2 from "../../imgs/elfen.png";
-import carouselImage3 from "../../imgs/orgaos.png";
+import carouselImage1 from '../../imgs/entrega.png';
+import carouselImage2 from '../../imgs/capa2.png';
+import carouselImage3 from '../../imgs/elfen.png';
+import carouselImage4 from '../../imgs/orgaos.png';
 
 class HeaderCarousel extends Component {
   render() {
@@ -14,7 +15,7 @@ class HeaderCarousel extends Component {
         showControls={false}
         showIndicators={true}
         className="z-depth-1 h-100 d-none d-md-block"
-        style={{ boxShadow: "none" }}
+        style={{ boxShadow: 'none' }}
       >
         <CarouselInner>
           <CarouselItem itemId="1">
@@ -48,7 +49,7 @@ class HeaderCarousel extends Component {
             <View>
               <img
                 className="d-block w-100"
-                src={carouselImage3}
+                src={carouselImage4}
                 alt="Third slide"
               />
             </View>

@@ -1,19 +1,21 @@
-import React, { Component } from "react";
-import { Card, CardBody, CardTitle, Input, Button } from "mdbreact";
-import axios from "axios";
+import React, { Component } from 'react';
+import { Card, CardBody, CardTitle, Input, Button } from 'mdbreact';
+// import axios from 'axios';
+
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 
 class Form extends Component {
   state = {
-    name: "",
-    email: "",
-    phone: "",
-    message: ""
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
   };
 
   onSubmit = async e => {
     e.preventDefault();
 
-    const { name, email, phone, message } = this.state;
+    // const { name, email, phone, message } = this.state;
 
     // const form = await axios.post("/api/form", {
     //   name,
@@ -31,34 +33,58 @@ class Form extends Component {
         <CardBody>
           <form>
             <CardTitle>Entre em Contato!</CardTitle>
-            <Input
-              label="Nome"
-              name="name"
-              icon="user"
-              type="text"
-              onChange={this.onChange}
-            />
-            <Input
-              label="Email"
-              name="email"
-              icon="envelope"
-              type="text"
-              onChange={this.onChange}
-            />
-            <Input
-              label="Telefone"
-              name="phone"
-              icon="phone"
-              type="text"
-              onChange={this.onChange}
-            />
-            <Input
-              label="Mensagem"
-              name="message"
-              icon="comments"
-              type="textarea"
-              onChange={this.onChange}
-            />
+            <div className="d-flex align-items-center">
+              <div>
+                <Icon icon="user" size="2x" className="mr-3" />
+              </div>
+              <div style={{ width: '100%' }}>
+                <Input
+                  label="Nome"
+                  name="name"
+                  type="text"
+                  onChange={this.onChange}
+                />
+              </div>
+            </div>
+            <div className="d-flex align-items-center">
+              <div>
+                <Icon icon="envelope" size="2x" className="mr-3" />
+              </div>
+              <div style={{ width: '100%' }}>
+                <Input
+                  label="Email"
+                  name="Email"
+                  type="text"
+                  onChange={this.onChange}
+                />
+              </div>
+            </div>
+            <div className="d-flex align-items-center">
+              <div>
+                <Icon icon="phone" size="2x" className="mr-3" />
+              </div>
+              <div style={{ width: '100%' }}>
+                <Input
+                  label="Telefone"
+                  name="phone"
+                  type="text"
+                  onChange={this.onChange}
+                />
+              </div>
+            </div>
+            <div className="d-flex align-items-center">
+              <div>
+                <Icon icon="comments" size="2x" className="mr-3" />
+              </div>
+              <div style={{ width: '100%' }}>
+                <Input
+                  label="Mensagem"
+                  name="message"
+                  type="textarea"
+                  onChange={this.onChange}
+                />
+              </div>
+            </div>
             <Button color="red" onClick={this.onSubmit} block floating>
               Enviar
             </Button>

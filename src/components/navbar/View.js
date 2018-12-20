@@ -11,6 +11,8 @@ import {
   Container
 } from 'mdbreact';
 
+import Logo from '../../imgs/logoNavbar.png';
+
 import Icones from './Icones';
 
 class NavBar extends Component {
@@ -65,7 +67,7 @@ class NavBar extends Component {
         >
           <Container className="p-2">
             <NavbarBrand href="https://lucasfloripa.github.io/pereira/">
-              PereiraLogo
+              <img className="img-fluid" src={Logo} alt="Pereira Logo" />
             </NavbarBrand>
             {!this.state.isWideEnough && (
               <NavbarToggler onClick={this.onClick} />

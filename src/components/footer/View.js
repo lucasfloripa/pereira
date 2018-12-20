@@ -19,7 +19,6 @@ class Footer extends Component {
               <div className="col-md-6 p-0">
                 <Informations />
               </div>
-              <div className="col-md-6 p-0">PereiraLogo</div>
             </div>
             <div className="row pb-resp pt-3">
               <p className="p-0 d-block">

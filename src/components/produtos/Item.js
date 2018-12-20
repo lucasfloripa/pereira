@@ -38,23 +38,27 @@ class ProdutosItem extends Component {
         </div>
         <Button
           outline
-          className="mx-auto rounded-circle"
-          color="warning"
-          style={{ width: '50%' }}
+          className="mx-auto"
+          color="danger"
+          size="sm"
+          style={{ width: '40%', borderRadius: '25px' }}
           onClick={this.toggle}
         >
-          <span className="d-lg-block d-none text-warning font-weight-bold lead">
+          <span className="d-lg-block d-none text-dark font-weight-bold lead">
             Saiba Mais
           </span>
-          <span className="d-lg-none d-block">Saiba Mais</span>
+          <span className="d-lg-none d-block text-dark">Saiba Mais</span>
         </Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>{this.props.nome}</ModalHeader>
           <ModalBody className="d-flex flex-column">
             <p className="lead font-weight-bold">{this.props.descricao}</p>
             <ul className="list-group list-group-flush mb-3">
-              {listItem.map(item => (
-                <li className="list-group-item text-center border-0 p-1">
+              {listItem.map((item, index) => (
+                <li
+                  className="list-group-item text-center border-0 p-1"
+                  key={index}
+                >
                   {item}
                 </li>
               ))}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Animation } from 'mdbreact';
 
-import Logo from '../../imgs/logosite.png';
+import Logo from '../../imgs/logooficial.png';
 import WhatsAppIcon from './WhatsAppIcon';
 import Carousel from './Carousel';
 

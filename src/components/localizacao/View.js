@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Container } from 'mdbreact';
 import Fade from 'react-reveal/Fade';
 
-import GoogleReactMap from './GoogleReactMap';
-
 class Localizacao extends Component {
   state = {
     isMarkerShown: false
