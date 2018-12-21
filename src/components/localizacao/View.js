@@ -39,9 +39,9 @@ class Localizacao extends Component {
           <Fade buttom>
             <div className="row m-0" style={{ width: '100%' }}>
               <div className="col p-0">
-                <div style={{ width: '100%' }}>
+                <div style={{ width: '100%', height: '600px' }}>
                   <iframe
-                    style={{ width: '100%', height: '650px' }}
+                    style={{ width: '100%', height: '108%' }}
                     className="m-0 p-0"
                     src="https://maps.google.com/maps?width=100%&amp;height=650&amp;hl=en&amp;coord=-27.559402611687613,-48.6179780960083&amp;q=R.%20Eliane%20Mota%2C%202505%20-%20Ipiranga%2C%20S%C3%A3o%20Jos%C3%A9%20-%20SC%2C%2088110-840%2C%20Brasil+(PereiraSC)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"
                     frameBorder="0"

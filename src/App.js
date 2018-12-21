@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Favicon from 'react-favicon';
 
 //Interface Componentes
 import NavBar from './components/navbar/View';
@@ -74,7 +73,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Favicon url="./img/iconsite.ico" />
         <NavBar />
         <Header />
         <Sobre />
