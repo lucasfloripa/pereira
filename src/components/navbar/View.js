@@ -11,7 +11,7 @@ import {
   Container
 } from 'mdbreact';
 
-import Logo from '../../imgs/logoNavbar.png';
+import Logo from '../../imgs/01.png';
 
 import Icones from './Icones';
 
